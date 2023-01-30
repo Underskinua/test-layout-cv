@@ -1,0 +1,101 @@
+.hero {
+    @media screen and (min-width: 1100px) {
+        padding: 96px 0 263px;
+        margin: 0 auto;       
+    }
+}
+
+.hero-wrapper {
+    @media screen and (min-width: 1100px) {
+        display: flex;
+        justify-content: space-between;
+            position: relative;
+    }    
+}
+
+.hero-svg {    
+    @media screen and (min-width: 1100px) {
+        display: flex;
+        position: absolute;   
+        top: -37%;
+        left: 55%;         
+    }   
+}
+
+.hero-description {  
+    @media screen and (min-width: 1100px) {
+        width: 514px;  
+        height: 280px;
+        
+              
+    }  
+
+    & h1 {
+        @media screen and (min-width: 1100px) {
+            font-family: "Tinos", Times, serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.15;
+            text-transform: uppercase;
+            color: var(--text-color-job);
+            margin-bottom: 10px;
+        }
+    }
+
+    & h2 {
+        @media screen and (min-width: 1100px) {
+            font-family: "Montserrat",sans-serif;
+            font-weight: 600;
+            font-size: 46px;
+            line-height: 1.2;
+            color: var(--text-color-green);
+            margin-bottom: 11px;
+        }
+    }
+
+    & p {
+        @media screen and (min-width: 1100px) {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: var(--text-color-white);
+            margin-bottom: 29px;
+        }
+    }        
+}
+
+.hero-btn {
+    @media screen and (min-width: 1100px) {
+        display: flex;
+        
+    }
+    & button {
+        @media screen and (min-width: 1100px) {
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--text-color-black);
+            background: var(--text-color-green);
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            padding: 12px 20px;
+            margin-right: 210px; 
+            margin-bottom: 105px;                   
+            }            
+        }  
+        
+        @media screen and (min-width: 1100px) {
+            :nth-child(2) {
+                margin-right: 0;
+            }
+        }
+}
+
+.hero-scrolle {
+    @media screen and (min-width: 1100px) {
+        display: flex;        
+        margin: 0 auto;
+    }
+}
