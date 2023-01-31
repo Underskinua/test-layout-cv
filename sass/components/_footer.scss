@@ -2,7 +2,19 @@ footer {
     @media screen and (min-width: 1100px) {
         padding: 0 0 92px 0;
     }
-    
+
+    & p:last-child {
+        @media screen and (min-width: 1100px) {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.8;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--text-color-white);
+            text-align: center;
+        }
+    }    
 }
 
 .footer-social__direction {
@@ -11,6 +23,7 @@ footer {
         gap: 75px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 49px;
     }   
 }
 
@@ -29,12 +42,42 @@ footer {
 
 .footer-social__icon {
     @media screen and (min-width: 1100px) {
-        
-        & p {            
-            text-align: center;
+        display: flex;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    & p {
+        @media screen and (min-width: 1100px) {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--text-color-white);
         }
     }
 }
 
+.footer-nav__direction {
+    @media screen and (min-width: 1100px) {
+        display: flex;
+        gap: 48px; 
+        justify-content: center;
+        margin-bottom: 49px;
+    }
 
+    
+}
+
+.footer-nav__link {
+    @media screen and (min-width: 1100px) {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--text-color-white);
+    }
+}
