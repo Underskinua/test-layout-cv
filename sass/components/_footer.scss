@@ -50,8 +50,7 @@ footer {
         display: flex;        
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-    
+        align-items: center;    
 
     & p {
         font-family: "Montserrat", sans-serif;
@@ -83,6 +82,15 @@ footer {
 
     @media screen and (min-width: 320px) {
         justify-content: space-between;
+    }
+
+    @media screen and (min-width: 480px) {
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        gap: 190px;
     }
 }
 

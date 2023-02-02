@@ -118,12 +118,18 @@ img {
 @media screen and (min-width: 768px) {
   .navigation {
     padding: 23px 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .navigation {
+    width: 1070px;
   }
 }
 .navigation button {
@@ -165,9 +171,14 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .menu-list {
+    gap: 150px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .menu-list li:nth-child(1) {
-    margin-right: 623px;
+    margin-right: 387px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -176,7 +187,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 480px) {
   .menu-list__link-active::after {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -255,9 +266,32 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: -37%;
-  left: 55%;
+}
+@media screen and (min-width: 320px) {
+  .hero-svg {
+    width: 290px;
+    height: 290px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-svg {
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-svg {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .hero-svg {
+    position: absolute;
+    top: -37%;
+    left: 55%;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -459,6 +493,18 @@ img {
     min-height: 194px;
   }
 }
+@media screen and (min-width: 480px) {
+  .project img {
+    width: 450px;
+    height: 318px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project img {
+    width: 100%;
+    height: 388px;
+  }
+}
 
 @media screen and (min-width: 1100px) {
   .project-direction {
@@ -474,7 +520,7 @@ img {
     padding: 16px 6px 19px 17px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 480px) {
   .project-content {
     padding: 29px 9px 31px 26px;
   }
@@ -528,10 +574,6 @@ img {
 }
 
 .project-btn {
-  font-weight: 500;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: var(--text-color-black);
   background: var(--text-color-green);
   border: none;
   border-radius: 6px;
@@ -541,6 +583,16 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
+}
+
+.project-direction__link {
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--text-color-black);
+}
+.project-direction__link:hover {
+  color: var(--text-color-white);
 }
 
 @media screen and (min-width: 320px) {
@@ -584,6 +636,7 @@ img {
   color: var(--text-color-white);
   margin-top: 11px;
   text-align: center;
+  width: 83px;
 }
 @media screen and (min-width: 320px) {
   .skills p {
@@ -600,7 +653,17 @@ img {
 }
 @media screen and (min-width: 320px) {
   .skills__direction {
-    gap: 28px;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .skills__direction {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills__direction {
+    gap: 20px 60px;
   }
 }
 .skills__direction svg {
@@ -614,9 +677,16 @@ img {
     height: 79px;
   }
 }
-@media screen and (min-width: 480px) {
-  .skills__direction {
-    width: 89px;
+@media screen and (min-width: 768px) {
+  .skills__direction svg {
+    width: 85px;
+    height: 85px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .skills__direction svg {
+    width: 128px;
+    height: 128px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -737,6 +807,20 @@ footer p:last-child {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-nav__direction {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-nav__direction {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 190px;
   }
 }
 

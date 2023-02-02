@@ -40,6 +40,7 @@
         color: var(--text-color-white);
         margin-top: 11px;
         text-align: center;  
+        width: 83px;
         
         @media screen and (min-width: 320px) {
             margin-top: 0;
@@ -52,7 +53,16 @@
     flex-wrap: wrap;
 
     @media screen and (min-width: 320px) {
-        gap: 28px;
+        gap: 60px;
+    }
+
+    @media screen and (min-width: 480px) {
+        gap: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 20px 60px;
+
     }
     
     & svg {
@@ -62,16 +72,21 @@
         width: 79px;
         height: 79px;        
         }
-    }
 
-        @media screen and (min-width: 480px) {
-            width: 89px;            
-            // gap: 48px;
+        @media screen and (min-width: 768px) {
+            width: 85px;
+            height: 85px;
         }
 
-    @media screen and (min-width: 1100px) {
+        @media screen and (min-width: 1100px) {
+            width: 128px;
+            height: 128px;
+            
+        }
+    }     
+
+    @media screen and (min-width: 1100px) {   
         
-        // gap: 120px;
         margin-bottom: 59px;
     }
 }

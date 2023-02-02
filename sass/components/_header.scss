@@ -25,8 +25,13 @@
     @media screen and (min-width: 768px) {
         
         padding: 23px 0;            
-        justify-content: center;
-        align-items: center;       
+        justify-content: space-between;
+        align-items: center;   
+        width: 738px;    
+    }
+
+    @media screen and (min-width: 1100px) {
+        width: 1070px;       
     }
 
     & button {      
@@ -64,11 +69,15 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media screen and (min-width: 768px) {
+        gap: 150px;
+    }
     
     & li:nth-child(1) {
        
         @media screen and (min-width: 1100px) {
-            margin-right: 623px;
+            margin-right: 387px;
         }           
     }
 
@@ -80,7 +89,7 @@
 }
 
 .menu-list__link-active::after {
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 480px) {
         display: flex;
         position: absolute;
         content: "";
