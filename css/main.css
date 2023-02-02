@@ -830,4 +830,129 @@ footer p:last-child {
   font-size: 14px;
   line-height: 1.2;
   color: var(--text-color-white);
+}
+
+@media screen and (min-width: 320px) {
+  .portfolio {
+    padding: 96px 0 105px 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .portfolio {
+    padding: 96px 0 130px 0;
+  }
+}
+.portfolio h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: 0.04em;
+  color: var(--text-color-white);
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 320px) {
+  .portfolio img {
+    width: 290px;
+    min-height: 194px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .portfolio img {
+    width: 450px;
+    height: 318px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio img {
+    width: 100%;
+    height: 388px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .project-direction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 27px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .project-content {
+    padding: 16px 6px 19px 17px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .project-content {
+    padding: 29px 9px 31px 26px;
+  }
+}
+.project-content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(text-color-title-project);
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+.project-content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--text-color-white);
+}
+@media screen and (min-width: 320px) {
+  .project-content p {
+    margin: 16px 0 34px 0;
+  }
+}
+.project-content p p:last-child {
+  margin-bottom: 0;
+}
+
+.project-tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+}
+.project-tech button {
+  background: var(--text-color-green);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  color: var(--text-color-black);
+}
+
+@media screen and (min-width: 320px) {
+  .resume {
+    padding: 96px 0 105px 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .resume {
+    padding: 96px 0 130px 0;
+  }
+}
+.resume h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: 0.04em;
+  color: var(--text-color-white);
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */

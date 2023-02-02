@@ -4,7 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!--fonts-raleway-roboto------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--normalazi----------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--normalize-end------------------------------->
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>RESUME</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="list menu-list">
+            <li><a href="./index.html" class="link">Home</a></li>
+            <li>
+              <a href="./project.html" class="link">Projects</a>
+            </li>
+          </ul>
+          <div class="mobile-menu">
+            <svg class="mobile-menu__icon-home" width="28" height="28">
+              <use href="./images/desktop/sprite.svg#icon-home"></use>
+            </svg>
+            <svg class="mobile-menu__icon-web" width="28" height="28">
+              <use href="./images/desktop/sprite.svg#icon-web"></use>
+            </svg>
+          </div>
+          <button type="button">
+            <a
+              class="link"
+              href="https://telegram.me/DimaBesklynskiy"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >Contact Me</a
+            >
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="resume">
+        <div class="container">
+          <ul class="list hero-wrapper">
+            <li class="hero-description">
+              <h1>Front-end DEVELOPER</h1>
+              <h2>Dmytro Besklynskyi</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt.
+              </p>
+            </li>
+            <li>
+              <svg class="hero-svg" width="500" height="500">
+                <use href="./images/desktop/sprite.svg#icon-image"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <div class="hero-btn">
+            <button type="button">
+              <a
+                class="link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                download
+                >Download CV</a
+              >
+            </button>
+          </div>
+          <svg class="hero-scrolle" width="32" height="32">
+            <use href="./images/desktop/sprite.svg#icon-scroll"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="about-me">
+        <div class="container">
+          <h2>About me</h2>
+          <p>
+            The long barrow was built on land previously inhabited in the
+            Mesolithic period. It consisted of a sub-rectangular earthen
+            tumulus, estimated to have been 15 metres (50 feet) in length, with
+            a chamber built from sarsen megaliths on its eastern end. Both
+            inhumed and cremated human remains were placed within this chamber
+            during the Neolithic period, representing at least nine or ten
+            individuals.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <ul class="list footer-social__direction">
+          <li class="footer-social__icon">
+            <a
+              class="link footer-sosial__border"
+              href="mailto:beskldmitriy@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/desktop/sprite.svg#icon-gmail"></use>
+              </svg>
+            </a>
+            <p>gmail</p>
+          </li>
+          <li class="footer-social__icon">
+            <a
+              class="link footer-sosial__border"
+              href="https://www.linkedin.com/in/dima-besklynskiy-ab75b6231/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg width="24" height="24">
+                <use href="./images/desktop/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+            <p>linkedin</p>
+          </li>
+          <li class="footer-social__icon">
+            <a class="link footer-sosial__border" href="#" target="_blank">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/desktop/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            <p>GITHUB</p>
+          </li>
+        </ul>
+        <ul class="list footer-nav__direction">
+          <li>
+            <a
+              class="link footer-nav__link"
+              href="./project.html"
+              target="_blank"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="link footer-nav__link"
+              href="./contact.html"
+              target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p>FRONT-END DEVELOPER 2023</p>
+      </div>
+    </footer>
+  </body>
 </html>
