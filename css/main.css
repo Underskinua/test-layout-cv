@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --text-color-white: #bdebea;
   --text-color-black: #252728;
@@ -739,7 +740,7 @@ footer p:last-child {
   }
 }
 
-.footer-sosial__border {
+.footer-social__border {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -754,6 +755,10 @@ footer p:last-child {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 9px;
+}
+.footer-social__border:hover {
+  position: relative;
+  bottom: 1em;
 }
 
 .footer-social__icon {
@@ -953,6 +958,233 @@ footer p:last-child {
   font-size: 24px;
   line-height: 1.08;
   letter-spacing: 0.04em;
-  color: var(--text-color-white);
+  color: #000000;
   margin-bottom: 32px;
+}
+
+.main_content {
+  width: 970px;
+  background: #f5f7fa;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.sidebar {
+  background-color: #1e2939;
+  padding-top: 40px;
+  width: 370px;
+}
+
+.photo {
+  width: 370px;
+  margin-bottom: 50px;
+}
+
+.sidebar-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.contacts,
+.techskills,
+.softskills {
+  margin-left: 40px;
+}
+
+.contacts-type {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.contact-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #ffffff;
+  opacity: 0.5; /* цвет не менял, применил свойство прозрачность в макете так и стоит*/
+}
+
+.contacts {
+  margin-bottom: 50px;
+}
+
+.tech-skills-list {
+  color: #ffffff;
+  padding: 0;
+  margin-left: 17px;
+}
+
+.tech-skills-item {
+  color: #fb6d3a;
+}
+
+.tech-skills-text {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.techskills {
+  margin-bottom: 44px;
+}
+
+.softskills {
+  margin-bottom: 366px;
+}
+
+.about_user {
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 105px 90px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.about-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.about-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #595959;
+  width: 400px;
+}
+
+.project {
+  margin-bottom: 50px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.project-list {
+  padding: 0;
+  margin-left: 17px;
+}
+
+.project-items,
+.project-braked {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #000000;
+}
+
+.project-link,
+.project-link-style {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #595959;
+}
+
+.project-link-style-my {
+  color: #595959;
+  text-decoration: none;
+  border-bottom: 0.3em dashed #fb6d3a;
+  padding-bottom: 0.3em;
+  /*отступ от текста вниз*/
+  padding: 0.1em;
+}
+
+.project-link-style-my:hover {
+  position: relative;
+  bottom: 1em;
+  color: #fb6d3a;
+}
+
+.project-link {
+  margin-left: 10px;
+}
+
+.work-position {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.organization {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fb6d3a;
+}
+
+.specialist {
+  font-weight: bold;
+  color: var(--text-color-black);
+}
+
+.period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+
+.line {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.work-list {
+  padding: 0;
+  margin-left: 17px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #595959;
+}
+
+.work-list-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #595959;
 }/*# sourceMappingURL=main.css.map */

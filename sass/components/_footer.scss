@@ -35,7 +35,7 @@ footer {
     }   
 }
 
-.footer-sosial__border {
+.footer-social__border {
     display: flex;
     width: 38px;
     height: 38px;
@@ -44,6 +44,11 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 9px;     
+
+    &:hover {
+        position: relative;
+        bottom: 1em;
+    }
 }
 
 .footer-social__icon {    
