@@ -963,16 +963,29 @@ footer p:last-child {
 }
 
 .main_content {
-  width: 970px;
   background: #f5f7fa;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+}
+@media screen and (min-width: 320px) {
+  .main_content {
+    width: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main_content {
+    width: 970px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 .sidebar {
@@ -980,10 +993,22 @@ footer p:last-child {
   padding-top: 40px;
   width: 370px;
 }
-
-.photo {
-  width: 370px;
-  margin-bottom: 50px;
+@media screen and (min-width: 320px) {
+  .sidebar {
+    width: 290px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .sidebar img {
+    width: 290px;
+    height: 290px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sidebar img {
+    margin-bottom: 50px;
+  }
 }
 
 .sidebar-title {
@@ -1019,8 +1044,15 @@ footer p:last-child {
   opacity: 0.5; /* цвет не менял, применил свойство прозрачность в макете так и стоит*/
 }
 
-.contacts {
-  margin-bottom: 50px;
+@media screen and (min-width: 320px) {
+  .contacts {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-bottom: 50px;
+  }
 }
 
 .tech-skills-list {
@@ -1041,12 +1073,26 @@ footer p:last-child {
   line-height: 1.7;
 }
 
-.techskills {
-  margin-bottom: 44px;
+@media screen and (min-width: 320px) {
+  .techskills {
+    margin-bottom: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .techskills {
+    margin-bottom: 44px;
+  }
 }
 
-.softskills {
-  margin-bottom: 366px;
+@media screen and (min-width: 320px) {
+  .softskills {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .softskills {
+    margin-bottom: 366px;
+  }
 }
 
 .about_user {
