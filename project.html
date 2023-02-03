@@ -37,12 +37,16 @@
             </li>
           </ul>
           <div class="mobile-menu">
-            <svg class="mobile-menu__icon-home" width="28" height="28">
-              <use href="./images/desktop/sprite.svg#icon-home"></use>
-            </svg>
-            <svg class="mobile-menu__icon-web" width="28" height="28">
-              <use href="./images/desktop/sprite.svg#icon-web"></use>
-            </svg>
+            <a href="./index.html">
+              <svg class="mobile-menu__icon-home" width="28" height="28">
+                <use href="./images/desktop/sprite.svg#icon-home"></use>
+              </svg>
+            </a>
+            <a href="./project.html">
+              <svg class="mobile-menu__icon-web" width="28" height="28">
+                <use href="./images/desktop/sprite.svg#icon-web"></use>
+              </svg>
+            </a>
           </div>
           <button type="button">
             <a
@@ -61,7 +65,7 @@
         <div class="container">
           <h2>Projects</h2>
 
-          <ul class="list project-direction">
+          <ul class="list project__direction">
             <!--card-1-->
             <li>
               <div>
@@ -104,6 +108,7 @@
             <!--card-2-->
             <li>
               <div>
+                <p>Look out</p>
                 <picture>
                   <source
                     srcset="./images/desktop/desktop-project.jpg"
@@ -116,7 +121,7 @@
                   <img width="518" height="388" />
                 </picture>
                 <div class="project-content">
-                  <h3>title project</h3>
+                  <h3>project: goose</h3>
                   <ul class="list project-tech">
                     <li>
                       <button type="button">Javascript</button>
@@ -265,12 +270,7 @@
             <a class="link footer-nav__link" href="./project.html">Projects</a>
           </li>
           <li>
-            <a
-              class="link footer-nav__link"
-              href="./contact.html"
-              target="_blank"
-              >My CV</a
-            >
+            <a class="link footer-nav__link" href="./contact.html">My CV</a>
           </li>
         </ul>
         <p>FRONT-END DEVELOPER 2023</p>

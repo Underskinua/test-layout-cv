@@ -107,7 +107,7 @@
 .mobile-menu {
     @media screen and (min-width: 320px)  {
         display: flex;
-        align-items: center;
+        align-items: end;
         gap: 30px;
     }
     
