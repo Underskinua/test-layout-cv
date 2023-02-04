@@ -72,13 +72,16 @@
 
       <section class="main-page">
         <div class="wrapper">
-          <header>
-            <img src="./img/logo.svg" alt="Логотип" />
-            <p class="logo-text">
+          <div class="logo">
+            <svg width="100" height="32">
+              <use href="./images/desktop/sprite.svg#logo-goit"></use>
+            </svg>
+
+            <p class="logo__text">
               Школа підготовки <br />
               IT-спеціалістів
             </p>
-          </header>
+          </div>
 
           <div class="main-page-row">
             <div class="banderogus-container">
@@ -97,17 +100,16 @@
               </button>
             </div>
 
-            <img
-              src="./img/gus.svg"
-              alt="banderogus"
-              class="banderogus-image"
-            />
+            <img class="gg" src="./images/desktop/goose/gus.svg" />
           </div>
         </div>
       </section>
 
       <section class="gus-facts">
-        <img src="./img/trezub.svg" alt="ukr logo" class="ukr-logo" />
+        <svg width="32" height="52">
+          <use href="./images/desktop/sprite.svg#trezub"></use>
+        </svg>
+
         <h3 class="gus-title">Цікаві факти про бандерогусей</h3>
         <p class="gus-descr">
           Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
@@ -117,7 +119,13 @@
 
         <div class="gus-facts-conteiner">
           <div class="gus-fact-item">
-            <img src="./img/gus1.svg" alt="gus1" class="gus-fact-img" />
+            <img
+              src="./images/desktop/goose/gus1.svg"
+              alt="gus1"
+              class="gus-fact-img"
+              width="222"
+              height="256"
+            />
             <h4 class="gus-fact-title">Система навігації</h4>
             <p class="gus-fact-descr">
               Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть
@@ -126,7 +134,13 @@
           </div>
 
           <div class="gus-fact-item">
-            <img src="./img/gus2.svg" alt="gus2" class="gus-fact-img" />
+            <img
+              src="./images/desktop/goose/gus2.svg"
+              alt="gus2"
+              class="gus-fact-img"
+              width="223"
+              height="256"
+            />
             <h4 class="gus-fact-title">Очі-тепловізори</h4>
             <p class="gus-fact-descr">
               Допомагають виявити характер сигнатури об’єктів та значно
@@ -134,7 +148,13 @@
             </p>
           </div>
           <div class="gus-fact-item">
-            <img src="./img/gus3.svg" alt="gus3" class="gus-fact-img" />
+            <img
+              src="./images/desktop/goose/gus3.svg"
+              alt="gus3"
+              class="gus-fact-img"
+              width="223"
+              height="256"
+            />
             <h4 class="gus-fact-title">Байракрила</h4>
             <p class="gus-fact-descr">
               Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
@@ -144,23 +164,28 @@
         </div>
       </section>
 
-      <footer class="victory-footer">
-        <div class="victory-bgd">
-          <img src="./img/trezub.svg" alt="ukr logo" class="ukr-logo" />
-          <h4 class="victory-title">Перемога завжди за нами!</h4>
-          <p class="victory-descr">
+      <div class="victory">
+        <div class="victory__bg">
+          <svg width="32" height="52" alt="ukr logo" class="ukr-logo">
+            <use href="./images/desktop/sprite.svg#trezub"></use>
+          </svg>
+
+          <h4 class="victory__title">Перемога завжди за нами!</h4>
+          <p class="victory__descr">
             Головна мета бандерогусей — служити гумору та доброті нашого народу.
             Ми забезпечимо вашу посмішку у часи, коли вона так необхідна
           </p>
         </div>
-      </footer>
+      </div>
 
       <div class="modal-bgd" id="form-modal">
         <div class="modal-form-container">
           <button class="close-btn">X</button>
 
           <form action="#" class="modal-form" data-netlify="true" id="form">
-            <img src="./img/trezub.svg" alt="ukr logo" />
+            <svg width="32" height="52">
+              <use href="./images/desktop/sprite.svg#trezub"></use>
+            </svg>
 
             <h4 class="model-form-title">Поділися, будь ласка, поштою</h4>
 
@@ -208,5 +233,6 @@
       </div>
       <!--end---->
     </main>
+    <script src="./scripts/goose/form (1).js"></script>
   </body>
 </html>
