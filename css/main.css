@@ -1736,4 +1736,31 @@ footer p:last-child {
 .modal-active {
   opacity: 1;
   pointer-events: all;
+}
+
+header {
+  margin: 0 auto;
+  background: #fff;
+}
+
+.nav__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px 0;
+  margin: 0 auto;
+}
+
+.nav__list-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+.nav__list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }/*# sourceMappingURL=main.css.map */
