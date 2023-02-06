@@ -1738,7 +1738,7 @@ footer p:last-child {
   pointer-events: all;
 }
 
-header {
+.header-book {
   margin: 0 auto;
   background: #fff;
 }
@@ -1749,6 +1749,9 @@ header {
   display: flex;
   padding: 7px 0;
   margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__wrapper {
@@ -1758,6 +1761,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__list-menu {
@@ -1784,7 +1790,7 @@ header {
   gap: 15px;
 }
 
-.hero {
+.hero-book {
   background: #f0efeb;
 }
 
@@ -2151,17 +2157,84 @@ header {
   margin: 0 auto;
   background: #fff;
 }
-
-footer {
-  padding: 51px 0 16px 0;
+.keep h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: #000;
+  margin-bottom: 9px;
+  text-align: center;
+}
+.keep p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.17;
+  color: #000;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.keep button {
+  padding: 7px 23px;
   background: #000;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #fff;
 }
 
-.footer__logo {
+.keep__form {
+  text-align: center;
+}
+
+.keep__form__filds-name {
+  margin-bottom: 18px;
+}
+
+.keep__form__input-first-name {
+  margin-right: 60px;
+  padding: 12px 76px 12px 8px;
+  color: #a0a0a0;
+}
+
+.keep__form__input-second-name {
+  padding: 12px 76px 12px 8px;
+  color: #a0a0a0;
+}
+
+.keep__form__input-email {
+  padding: 12px 407px 12px 8px;
+  color: #a0a0a0;
+}
+
+.footer-book {
+  padding: 51px 0 16px 0;
+  background: #000;
+  margin: 0 auto;
+}
+
+#footer-book__2021 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #fff;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.foote-bookr__logo {
   margin-bottom: 25px;
 }
 
-.footer__social-direction {
+.footer-book__social-direction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2172,21 +2245,82 @@ footer {
   fill: #fff;
 }
 
-.gg {
+.footer-book__direction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
-  border: 3px dashed goldenrod;
-}
-
-.aa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 100px;
-  border: 3px dashed goldenrod;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer-book__menu-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+
+.footer-book__menu-about p, .footer-book__menu-contact p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #fff;
+  margin-bottom: 36px;
+}
+.footer-book__menu-about a, .footer-book__menu-contact a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-book__menu-about a:hover, .footer-book__menu-contact a:hover {
+  text-decoration: underline;
+}
+
+.btn-back-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 5%;
+  right: 10%;
+  position: fixed;
+  z-index: 99;
+  fill: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #000;
+  border-radius: 100px;
+  background: rgba(215, 229, 236, 0.7);
+  padding: 7px 17px;
+}
+.btn-back-project svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 3px;
+}
+.btn-back-project a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn-back-project a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

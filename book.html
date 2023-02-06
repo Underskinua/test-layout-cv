@@ -28,7 +28,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header-book">
       <nav class="nav__direction">
         <div class="container">
           <div class="nav__wrapper">
@@ -81,7 +81,15 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <div class="btn-back-project">
+        <a href="./project.html">
+          <svg width="32" height="32">
+            <use href="./images/desktop/sprite.svg#icon-scroll"></use>
+          </svg>
+          :to projects
+        </a>
+      </div>
+      <section class="hero-book">
         <div class="container">
           <div class="hero__direction">
             <div class="hero__content">
@@ -346,18 +354,53 @@
         </div>
       </section>
       <section class="keep">
-        <div container></div>
+        <div class="container">
+          <h2>Keep in touch</h2>
+          <p>
+            Get our travel advice, global views and travel freebies in your
+            inbox
+          </p>
+          <form class="keep__form">
+            <div class="keep__form__filds-name">
+              <label for="keep__form__first-name">
+                <input
+                  name="firstName"
+                  placeholder="First name"
+                  type="text"
+                  class="keep__form__input-first-name"
+                />
+              </label>
+              <label for="keep__form__last-name">
+                <input
+                  name="secondName"
+                  placeholder="Last name"
+                  type="text"
+                  class="keep__form__input-second-name"
+                />
+              </label>
+            </div>
+            <label>
+              <input
+                name="user_email"
+                placeholder="Email"
+                type="email"
+                class="keep__form__input-email"
+              />
+            </label>
+          </form>
+          <button type="submit">Subscribe</button>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer-book">
       <div class="container">
-        <div class="aa">
-          <div>
-            <svg class="footer__logo" width="129" height="41">
+        <div class="footer-book__direction">
+          <div class="footer-book__">
+            <svg class="footer-book__logo" width="129" height="41">
               <use href="./images/desktop/sprite.svg#logo-footer"></use>
             </svg>
 
-            <ul class="footer__social-direction list">
+            <ul class="footer-book__social-direction list">
               <li>
                 <svg width="26" height="26">
                   <use href="./images/desktop/sprite.svg#facebook"></use>
@@ -376,26 +419,26 @@
             </ul>
           </div>
 
-          <div class="gg">
-            <div>
+          <div class="footer-book__menu-direction">
+            <div class="footer-book__menu-about">
               <p>ABOUT</p>
-              <ul>
-                <li>About Us</li>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
-                <li>Write for Us</li>
+              <ul class="list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Write for Us</a></li>
               </ul>
             </div>
-            <div>
+            <div class="footer-book__menu-contact">
               <p>CONTACT</p>
-              <ul>
-                <li>Email hi@thalby.com</li>
-                <li>Help</li>
+              <ul class="list">
+                <li><a href="#">Email hi@thalby.com</a></li>
+                <li><a href="#">Help</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <p>Thalby LLC © 2021</p>
+        <p id="footer-book__2021">Thalby LLC © 2021</p>
       </div>
     </footer>
   </body>

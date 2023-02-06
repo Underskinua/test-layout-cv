@@ -1,0 +1,38 @@
+.btn-back-project {
+    display: flex;
+    top: 5%;
+    right: 10%;
+
+    position: fixed;
+    z-index: 99;
+    fill: #000;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 100px;
+    background: rgba(215, 229, 236, 0.7);
+    padding: 7px 17px;
+    // transform: rotate(90deg);
+
+    & svg {
+        display: flex;
+        transform: rotate(90deg);
+        margin-left: 3px;
+
+    }
+
+    & a {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+        color: #000;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
