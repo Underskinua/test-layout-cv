@@ -1383,11 +1383,18 @@ footer p:last-child {
   color: #595959;
 }
 
-.victory__descr, .goose__facts__direction p, .goose__facts p, .goose__greeting__container-content p {
+.victory__content-direction p, .goose__facts__direction p, .goose__facts p, .goose__greeting__container-content p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #1b1d1f;
+}
+
+.modal-field-input, .modal-field-name, .modal-form-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
 }
 
 .goose__greeting {
@@ -1415,12 +1422,12 @@ footer p:last-child {
 
 .goose__greeting__logo {
   margin: 34px 0 58px 0;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 .goose__greeting__logo p {
   margin-left: 18px;
@@ -1436,12 +1443,34 @@ footer p:last-child {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 320px) {
+  .goose__greeting__direction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 320px) {
+  .goose__greeting__direction img {
+    margin-top: 96px;
+  }
+}
 
 .goose__greeting__container-content {
   background-color: #ffffff;
-  padding: 60px 56px;
   -ms-flex-item-align: center;
       align-self: center;
+}
+@media screen and (min-width: 320px) {
+  .goose__greeting__container-content {
+    padding: 60px 16px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .goose__greeting__container-content {
+    padding: 60px 56px;
+  }
 }
 .goose__greeting__container-content h3 {
   color: #1b1d1f;
@@ -1450,6 +1479,11 @@ footer p:last-child {
   line-height: 1.5;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 320px) {
+  .goose__greeting__container-content h3 {
+    text-align: center;
+  }
+}
 .goose__greeting__container-content h2 {
   color: #ff6b0a;
   font-weight: 600;
@@ -1457,14 +1491,33 @@ footer p:last-child {
   line-height: 1;
   margin-bottom: 48px;
 }
+@media screen and (min-width: 320px) {
+  .goose__greeting__container-content h2 {
+    text-align: center;
+  }
+}
 .goose__greeting__container-content h1 {
   color: #1b1d1f;
   font-weight: 600;
-  font-size: 64px;
   line-height: 1.25;
+}
+@media screen and (min-width: 320px) {
+  .goose__greeting__container-content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .goose__greeting__container-content h1 {
+    font-size: 64px;
+  }
 }
 .goose__greeting__container-content p {
   margin: 24px 0 48px 0;
+}
+@media screen and (min-width: 320px) {
+  .goose__greeting__container-content p {
+    text-align: center;
+  }
 }
 
 .goose__greeting__launch {
@@ -1477,6 +1530,14 @@ footer p:last-child {
   color: #ffffff;
   cursor: pointer;
   border: 0;
+}
+@media screen and (min-width: 320px) {
+  .goose__greeting__launch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .goose__facts {
@@ -1501,16 +1562,36 @@ footer p:last-child {
 }
 .goose__facts h3 {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 2.08;
   color: #1b1d1f;
   margin: 16px 0;
   text-align: center;
 }
+@media screen and (min-width: 320px) {
+  .goose__facts h3 {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .goose__facts h3 {
+    font-size: 48px;
+    line-height: 2.08;
+  }
+}
 .goose__facts p {
-  width: 875px;
-  text-align: start;
   margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .goose__facts p {
+    width: 290px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .goose__facts p {
+    width: 875px;
+    text-align: start;
+  }
 }
 
 .goose__facts__direction {
@@ -1541,24 +1622,6 @@ footer p:last-child {
   margin: 0 auto;
 }
 
-.victory__bg {
-  background: -webkit-gradient(linear, right top, left top, from(#c1e8ff), to(#ffffff));
-  background: linear-gradient(270deg, #c1e8ff 0%, #ffffff 100%);
-  width: 100%;
-  padding: 72px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 3px dashed orange;
-}
-
 .victory {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1566,19 +1629,46 @@ footer p:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: -webkit-gradient(linear, right top, left top, from(#c1e8ff), to(#ffffff));
+  background: linear-gradient(270deg, #c1e8ff 0%, #ffffff 100%);
+  padding: 72px 0;
 }
 
-.victory__title {
+@media screen and (min-width: 320px) {
+  .victory__content-direction svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+.victory__content-direction h4 {
   font-weight: 600;
   font-size: 48px;
   line-height: 2.08;
   color: #1b1d1f;
   margin: 16px 0;
 }
-
-.victory__descr {
-  width: 875px;
+@media screen and (min-width: 320px) {
+  .victory__content-direction h4 {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+.victory__content-direction p {
   text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .victory__content-direction p {
+    width: 290px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .victory__content-direction p {
+    width: 875px;
+  }
 }
 
 .modal-bgd {
@@ -1639,10 +1729,6 @@ footer p:last-child {
 }
 
 .modal-form-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
   margin-bottom: 24px;
 }
 
@@ -1659,11 +1745,7 @@ footer p:last-child {
 }
 
 .modal-field-name {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   margin-bottom: 8px;
-  color: #000000;
 }
 
 .modal-field-input {
@@ -1672,9 +1754,6 @@ footer p:last-child {
           box-sizing: border-box;
   border-radius: 8px;
   height: 48px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
   padding: 4px 8px;
 }
 

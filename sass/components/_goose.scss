@@ -6,14 +6,18 @@
     color: #1b1d1f;
 }
 
+%mod {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
  .goose__greeting {
      background: linear-gradient(270deg, #A5DEFF 0%, #FCFEFF 100%);
      height: 100%;
      display: flex;
-     flex-direction: column;
-
-
-     
+     flex-direction: column;   
  }
 
 .wrapper {
@@ -30,11 +34,16 @@
 
 .goose__greeting__logo {
     margin: 34px 0 58px 0;
+    top: 0;
+    left: 0;
     
     display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
+    
+
+    @media screen and (min-width: 320px) {
+        
+    }
 
     & p {
         margin-left: 18px;
@@ -45,20 +54,41 @@
 
 .goose__greeting__direction {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    
+    @media screen and (min-width: 320px) {
+        flex-direction: column-reverse;        
+    }
+
+    & img {
+        @media screen and (min-width: 320px) {    
+            margin-top: 96px;
+        }
+    }
 }
 
 .goose__greeting__container-content {
-    background-color: #ffffff;
-    padding: 60px 56px;
+    background-color: #ffffff;    
     align-self: center;
 
+    @media screen and (min-width: 320px) {
+        padding: 60px 16px;
+    }
+
+    @media screen and (min-width: 1100px) {
+        padding: 60px 56px;
+    }   
+        
     & h3 {
             color: #1b1d1f;
             font-weight: 600;
             font-size: 16px;
             line-height: 1.5;
             margin-bottom: 16px;
+
+            @media screen and (min-width: 320px) {
+                text-align: center;
+            }
         }
 
     & h2 {
@@ -67,18 +97,33 @@
             font-size: 24px;
             line-height: 1;
             margin-bottom: 48px;
+
+            @media screen and (min-width: 320px) {
+                text-align: center;
+            }
         }
 
     & h1 {
             color: #1b1d1f;
-            font-weight: 600;
-            font-size: 64px;
+            font-weight: 600;            
             line-height: 1.25;
+
+            @media screen and (min-width: 320px) {
+                font-size: 40px;
+            }
+
+            @media screen and (min-width: 1100px) {
+                font-size: 64px;
+            }
         }   
 
     & p {
             margin: 24px 0 48px 0;
             @extend %p;
+
+            @media screen and (min-width: 320px) {
+                text-align: center;
+            }
     }
 }
 
@@ -92,6 +137,11 @@
     color: #ffffff;
     cursor: pointer;
     border: 0;
+
+    @media screen and (min-width: 320px) {
+        display: flex;
+        margin: 0 auto;
+    }
 }
 
 .goose__facts {
@@ -108,22 +158,38 @@
     }
 
     & h3 {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 2.08;
+        font-weight: 600;        
         color: #1b1d1f;
         margin: 16px 0;
-        text-align: center
+        text-align: center;
+          @media screen and (min-width: 320px) {
+            font-size: 36px;
+            line-height: 1.5;
+          }
+
+          @media screen and (min-width: 1100px) {
+            font-size: 48px;
+            line-height: 2.08;
+          }
     }
 
     & p {
-        @extend %p;
-        width: 875px;
-        text-align: start;
+        @extend %p;        
         margin: 0 auto;
-    }
-}
 
+        @media screen and (min-width: 320px) {
+                width: 290px;
+                text-align: center;
+        }
+
+        @media screen and (min-width: 1100px) {
+            width: 875px;
+            text-align: start;
+        }
+    }
+
+   
+}
 
 .goose__facts__direction {    
     display: flex;
@@ -152,36 +218,67 @@
         }
 }
 
-.victory__bg {
-    background: linear-gradient(270deg, #c1e8ff 0%, #ffffff 100%);
-    width: 100%;
-    padding: 72px 0;
+// .victory__content-direction {
+   
+    // width: 100%;
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    //@at-root: flex;
+    // flex-direction: column;
+    // align-items: center;    
 
-    border: 3px dashed orange;
-}
+// }
+
+
 
 .victory {
     display: flex;
     justify-content: center;
+    background: linear-gradient(270deg, #c1e8ff 0%, #ffffff 100%);
+    padding: 72px 0;
 }
 
-.victory__title {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 2.08;
-    color: #1b1d1f;
-    margin: 16px 0;
+.victory__content-direction {
+    & svg {
+        @media screen and (min-width: 320px) {
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+    
+
+    & h4 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 2.08;
+        color: #1b1d1f;
+        margin: 16px 0;
+        
+            @media screen and (min-width: 320px) {
+                font-size: 40px;
+                line-height: 1.2;
+                letter-spacing: 0.1em;                
+                text-align: center;
+            }
+    }
+
+    & p {
+        @extend %p;       
+        text-align: center;
+
+        @media screen and (min-width: 320px) {
+            width: 290px;
+        }
+
+        @media screen and (min-width: 1100px) {
+            width: 875px;
+        }
+    }
 }
 
-.victory__descr {
-    @extend %p;
-    width: 875px;
-    text-align: center;
-}
+
+
+
 
 .modal-bgd {
     width: 100%;
@@ -225,10 +322,7 @@
 }
 
 .modal-form-descr {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #000000;
+    @extend %mod;
     margin-bottom: 24px;
 }
 
@@ -240,11 +334,8 @@
 }
 
 .modal-field-name {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    @extend %mod;
     margin-bottom: 8px;
-    color: #000000;
 }
 
 .modal-field-input {
@@ -252,9 +343,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     height: 48px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
+    @extend %mod;
     padding: 4px 8px;
 }
 
@@ -290,5 +379,4 @@
     opacity: 1;
     pointer-events: all;
 }
-
 
