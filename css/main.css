@@ -1383,31 +1383,14 @@ footer p:last-child {
   color: #595959;
 }
 
-.goose {
-  border: 3px dashed goldenrod;
-}
-@media screen and (min-width: 1100px) {
-  .goose {
-    padding: 96px 0 10px 0;
-  }
-}
-
-.victory__descr, .gus-fact-descr, .gus-descr, .banderogus-descr {
+.victory__descr, .goose__facts__direction p, .goose__facts p, .goose__greeting__container-content p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #1b1d1f;
 }
 
-.wrapper {
-  width: 1170px;
-  margin: 0 auto;
-  height: 100%;
-  position: relative;
-  border: 3px dashed red;
-}
-
-.main-page {
+.goose__greeting {
   background: -webkit-gradient(linear, right top, left top, from(#A5DEFF), to(#FCFEFF));
   background: linear-gradient(270deg, #A5DEFF 0%, #FCFEFF 100%);
   height: 100%;
@@ -1418,10 +1401,19 @@ footer p:last-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 3px dashed yellow;
 }
 
-.logo {
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+@media screen and (min-width: 1100px) {
+  .wrapper {
+    width: 1100px;
+  }
+}
+
+.goose__greeting__logo {
   margin: 34px 0 58px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1430,14 +1422,13 @@ footer p:last-child {
   top: 0;
   left: 0;
 }
-
-.logo__text {
+.goose__greeting__logo p {
   margin-left: 18px;
   font-size: 16px;
   color: #000;
 }
 
-.main-page-row {
+.goose__greeting__direction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1446,41 +1437,37 @@ footer p:last-child {
           justify-content: space-between;
 }
 
-.banderogus-container {
+.goose__greeting__container-content {
   background-color: #ffffff;
   padding: 60px 56px;
   -ms-flex-item-align: center;
       align-self: center;
 }
-
-.banderogus-title {
-  color: #1b1d1f;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 1.25;
-}
-
-.banderogus-greeting {
+.goose__greeting__container-content h3 {
   color: #1b1d1f;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 16px;
 }
-
-.banderogus-start-text {
+.goose__greeting__container-content h2 {
   color: #ff6b0a;
   font-weight: 600;
   font-size: 24px;
   line-height: 1;
   margin-bottom: 48px;
 }
-
-.banderogus-descr {
+.goose__greeting__container-content h1 {
+  color: #1b1d1f;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+}
+.goose__greeting__container-content p {
   margin: 24px 0 48px 0;
 }
 
-.banderogus-launch {
+.goose__greeting__launch {
   background: #ff6b0a;
   border-radius: 8px;
   padding: 12px 24px;
@@ -1492,7 +1479,7 @@ footer p:last-child {
   border: 0;
 }
 
-.gus-facts {
+.goose__facts {
   padding: 52px 0 72px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1505,48 +1492,53 @@ footer p:last-child {
       -ms-flex-align: center;
           align-items: center;
   background: #ffffff;
-  border: 3px dashed navajowhite;
 }
-
-.gus-title {
+.goose__facts svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+.goose__facts h3 {
   font-weight: 600;
   font-size: 48px;
   line-height: 2.08;
   color: #1b1d1f;
   margin: 16px 0;
-}
-
-.gus-descr {
-  width: 875px;
   text-align: center;
-  border: 3px dashed #ff6b0a;
+}
+.goose__facts p {
+  width: 875px;
+  text-align: start;
+  margin: 0 auto;
 }
 
-.gus-facts-conteiner {
-  width: 1170px;
+.goose__facts__direction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 3px dashed #ff6b0a;
+  gap: 10px;
 }
-
-.gus-fact-item {
-  width: 33%;
+.goose__facts__direction img {
+  margin: 0 auto;
 }
-
-.gus-fact-title {
+.goose__facts__direction h4 {
   font-weight: 600;
   font-size: 24px;
   line-height: 1;
   color: #1b1d1f;
-  margin: 12 px 0 32px 0;
+  margin: 12px 0 32px 0;
+  text-align: center;
 }
-
-.gus-fact-descr {
+.goose__facts__direction p {
   width: 280px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .victory__bg {
@@ -1554,7 +1546,6 @@ footer p:last-child {
   background: linear-gradient(270deg, #c1e8ff 0%, #ffffff 100%);
   width: 100%;
   padding: 72px 0;
-  margin-bottom: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

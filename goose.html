@@ -28,47 +28,7 @@
     <title>Project-Goose</title>
   </head>
   <body>
-    <!--
-    <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <ul class="list menu-list">
-            <li><a href="./index.html" class="link">Home</a></li>
-            <li>
-              <a href="./project.html" class="link menu-list__link-active"
-                >Projects</a
-              >
-            </li>
-          </ul>
-          <div class="mobile-menu">
-            <a href="./index.html">
-              <svg class="mobile-menu__icon-home" width="28" height="28">
-                <use href="./images/desktop/sprite.svg#icon-home"></use>
-              </svg>
-            </a>
-            <a href="./project.html">
-              <svg class="mobile-menu__icon-web" width="28" height="28">
-                <use href="./images/desktop/sprite.svg#icon-web"></use>
-              </svg>
-            </a>
-          </div>
-          <button type="button">
-            <a
-              class="link"
-              href="https://telegram.me/DimaBesklynskiy"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              >Contact Me</a
-            >
-          </button>
-        </nav>
-      </div>
-    </header>
-
-     -->
     <main>
-      <!--start-->
-
       <div class="btn-back-project">
         <a href="./project.html">
           <svg width="32" height="32">
@@ -78,101 +38,105 @@
         </a>
       </div>
 
-      <section class="main-page">
-        <div class="wrapper">
-          <div class="logo">
-            <svg width="100" height="32">
-              <use href="./images/desktop/sprite.svg#logo-goit"></use>
-            </svg>
+      <section class="goose__greeting">
+        <div class="container">
+          <div class="wrapper">
+            <div class="goose__greeting__logo">
+              <svg width="100" height="32">
+                <use href="./images/desktop/sprite.svg#logo-goit"></use>
+              </svg>
 
-            <p class="logo__text">
-              Школа підготовки <br />
-              IT-спеціалістів
-            </p>
-          </div>
-
-          <div class="main-page-row">
-            <div class="banderogus-container">
-              <h3 class="banderogus-greeting">Доброго вечора, ми з України</h3>
-              <h2 class="banderogus-start-text">На старт. Увага. Полетіли!</h2>
-              <h1 class="banderogus-title">Бандерогусь</h1>
-
-              <p class="banderogus-descr">
-                Спеціальний бойовий гусак із біолабораторій України. Пишаюся
-                своїми подвигами, бороню Батьківщину та підтримую позитивний дух
-                народу. Слава Україні!
+              <p>
+                Школа підготовки <br />
+                IT-спеціалістів
               </p>
-
-              <button class="banderogus-launch" id="open-form-modal-btn">
-                Запустити гуся
-              </button>
             </div>
 
-            <img class="gg" src="./images/desktop/goose/gus.svg" />
+            <div class="goose__greeting__direction">
+              <div class="goose__greeting__container-content">
+                <h3>Доброго вечора, ми з України</h3>
+                <h2>На старт. Увага. Полетіли!</h2>
+                <h1>Бандерогусь</h1>
+
+                <p>
+                  Спеціальний бойовий гусак із біолабораторій України. Пишаюся
+                  своїми подвигами, бороню Батьківщину та підтримую позитивний
+                  дух народу. Слава Україні!
+                </p>
+
+                <button
+                  class="goose__greeting__launch"
+                  id="open-form-modal-btn"
+                >
+                  Запустити гуся
+                </button>
+              </div>
+
+              <img src="./images/desktop/goose/gus.svg" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="gus-facts">
-        <svg width="32" height="52">
-          <use href="./images/desktop/sprite.svg#trezub"></use>
-        </svg>
+      <section class="goose__facts">
+        <div class="container">
+          <svg width="32" height="52">
+            <use href="./images/desktop/sprite.svg#trezub"></use>
+          </svg>
 
-        <h3 class="gus-title">Цікаві факти про бандерогусей</h3>
-        <p class="gus-descr">
-          Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
-          можуть атакувати ворога системою надпотужного озброєння. Також нищать
-          психологічно, активуючи високочастотне шипіння та розмахування крилами
-        </p>
+          <h3>Цікаві факти про бандерогусей</h3>
+          <p>
+            Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки
+            можуть атакувати ворога системою надпотужного озброєння. Також
+            нищать психологічно, активуючи високочастотне шипіння та
+            розмахування крилами
+          </p>
 
-        <div class="gus-facts-conteiner">
-          <div class="gus-fact-item">
-            <img
-              src="./images/desktop/goose/gus1.svg"
-              alt="gus1"
-              class="gus-fact-img"
-              width="222"
-              height="256"
-            />
-            <h4 class="gus-fact-title">Система навігації</h4>
-            <p class="gus-fact-descr">
-              Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть
-              на етапі збірки
-            </p>
-          </div>
-
-          <div class="gus-fact-item">
-            <img
-              src="./images/desktop/goose/gus2.svg"
-              alt="gus2"
-              class="gus-fact-img"
-              width="223"
-              height="256"
-            />
-            <h4 class="gus-fact-title">Очі-тепловізори</h4>
-            <p class="gus-fact-descr">
-              Допомагають виявити характер сигнатури об’єктів та значно
-              підвищують точність удару
-            </p>
-          </div>
-          <div class="gus-fact-item">
-            <img
-              src="./images/desktop/goose/gus3.svg"
-              alt="gus3"
-              class="gus-fact-img"
-              width="223"
-              height="256"
-            />
-            <h4 class="gus-fact-title">Байракрила</h4>
-            <p class="gus-fact-descr">
-              Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
-              «ніхріна собі» кілометрів
-            </p>
-          </div>
+          <ul class="goose__facts__direction">
+            <li>
+              <img
+                src="./images/desktop/goose/gus1.svg"
+                alt="gus1"
+                width="222"
+                height="256"
+              />
+              <h4>Система навігації</h4>
+              <p>
+                Супутниковий GPS та ехолокатори розпізнають ворожу техніку
+                навіть на етапі збірки
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/desktop/goose/gus2.svg"
+                alt="gus2"
+                width="223"
+                height="256"
+              />
+              <h4>Очі-тепловізори</h4>
+              <p>
+                Допомагають виявити характер сигнатури об’єктів та значно
+                підвищують точність удару
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/desktop/goose/gus3.svg"
+                alt="gus3"
+                width="223"
+                height="256"
+              />
+              <h4>Байракрила</h4>
+              <p>
+                Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
+                «ніхріна собі» кілометрів
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <div class="victory">
+      <section class="victory">
         <div class="victory__bg">
           <svg width="32" height="52" alt="ukr logo" class="ukr-logo">
             <use href="./images/desktop/sprite.svg#trezub"></use>
@@ -184,63 +148,59 @@
             Ми забезпечимо вашу посмішку у часи, коли вона так необхідна
           </p>
         </div>
-      </div>
-
-      <div class="modal-bgd" id="form-modal">
-        <div class="modal-form-container">
-          <button class="close-btn">X</button>
-
-          <form action="#" class="modal-form" data-netlify="true" id="form">
-            <svg width="32" height="52">
-              <use href="./images/desktop/sprite.svg#trezub"></use>
-            </svg>
-
-            <h4 class="model-form-title">Поділися, будь ласка, поштою</h4>
-
-            <p class="modal-form-descr">та запиши гуся до бандерозагону</p>
-
-            <div class="modal-form-field">
-              <label for="user-name" class="modal-field-name">Ім'я</label>
-              <input
-                type="text"
-                class="modal-field-input"
-                id="user-name"
-                name="Ім'я"
-              />
-            </div>
-
-            <div class="modal-form-field">
-              <label for="user-email" class="modal-field-name">Email</label>
-              <input
-                type="email"
-                class="modal-field-input"
-                id="user-email"
-                name="Email"
-              />
-            </div>
-
-            <button class="modal-form-btn" id="launch-btn">
-              Запустити гуся
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div class="modal-bgd" id="success-modal">
-        <div class="modal-form modal-form-conteiner">
-          <button class="close-btn">X</button>
-
-          <img src="./img/trezub.svg" alt="ukr logo" />
-
-          <h4 class="model-form-title">Дякуємо, гусь успішно запущений</h4>
-
-          <p class="modal-form-descr modal-descr">
-            Слава Україні! Героям Слава!
-          </p>
-        </div>
-      </div>
-      <!--end---->
+      </section>
     </main>
+    <div class="modal-bgd" id="form-modal">
+      <div class="modal-form-container">
+        <button class="close-btn">X</button>
+
+        <form action="#" class="modal-form" data-netlify="true" id="form">
+          <svg width="32" height="52">
+            <use href="./images/desktop/sprite.svg#trezub"></use>
+          </svg>
+
+          <h4 class="model-form-title">Поділися, будь ласка, поштою</h4>
+
+          <p class="modal-form-descr">та запиши гуся до бандерозагону</p>
+
+          <div class="modal-form-field">
+            <label for="user-name" class="modal-field-name">Ім'я</label>
+            <input
+              type="text"
+              class="modal-field-input"
+              id="user-name"
+              name="Ім'я"
+            />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="user-email" class="modal-field-name">Email</label>
+            <input
+              type="email"
+              class="modal-field-input"
+              id="user-email"
+              name="Email"
+            />
+          </div>
+
+          <button class="modal-form-btn" id="launch-btn">Запустити гуся</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-bgd" id="success-modal">
+      <div class="modal-form modal-form-conteiner">
+        <button class="close-btn">X</button>
+
+        <img src="./img/trezub.svg" alt="ukr logo" />
+
+        <h4 class="model-form-title">Дякуємо, гусь успішно запущений</h4>
+
+        <p class="modal-form-descr modal-descr">Слава Україні! Героям Слава!</p>
+      </div>
+    </div>
+    <!--end---->
+
     <script src="./scripts/goose/form (1).js"></script>
   </body>
 </html>
