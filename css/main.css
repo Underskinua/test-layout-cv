@@ -338,6 +338,13 @@ img {
     margin-bottom: 11px;
   }
 }
+.hero-description h4 {
+  font-family: "Tinos", "Times New    Roman", Times, serif;
+  color: var(--text-color-job);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 0.1;
+}
 .hero-description p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -402,6 +409,9 @@ img {
   margin-right: 0;
 }
 
+.hero-scrolle {
+  fill: #fff;
+}
 @media screen and (min-width: 320px) {
   .hero-scrolle {
     display: none;
@@ -880,8 +890,22 @@ footer p:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 27px;
   }
+}
+
+.project__direction__calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: calc((100% - 27px) / 2);
+      flex-basis: calc((100% - 27px) / 2);
 }
 
 .project__wrapper-layer {
@@ -891,7 +915,7 @@ footer p:last-child {
 .project__layer-link {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   text-transform: uppercase;
   text-decoration: none;
   background: var(--text-color-green);
@@ -1236,6 +1260,13 @@ footer p:last-child {
     font-size: 45px;
     line-height: 1.2;
   }
+}
+.about h4 {
+  font-family: "Tinos", "Times New    Roman", Times, serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 0.1;
 }
 .about p {
   font-size: 14px;
@@ -1748,6 +1779,8 @@ footer p:last-child {
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background: rgba(27, 29, 31, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1762,24 +1795,6 @@ footer p:last-child {
   pointer-events: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-@media screen and (min-width: 320px) {
-  .modal-bgd {
-    top: 0;
-    left: 0;
-  }
-}
-@media screen and (min-width: 480px) {
-  .modal-bgd {
-    top: 0;
-    left: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal-bgd {
-    top: 0;
-    left: 0;
-  }
 }
 
 .modal-form {

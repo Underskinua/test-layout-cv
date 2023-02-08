@@ -92,6 +92,17 @@
         }
     }
 
+    & h4 {
+        font-family: "Tinos",
+                 'Times New    Roman',
+                 Times,
+                 serif;
+        color: var(--text-color-job);
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 0.1;    
+    }
+
     & p {
         
         font-family: "Montserrat", sans-serif;
@@ -158,6 +169,7 @@
 }
 
 .hero-scrolle {
+    fill: #fff;
     @media screen and (min-width: 320px) {
         display: none;
     }
