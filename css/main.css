@@ -1715,6 +1715,11 @@ footer p:last-child {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .victory__content-direction h4 {
+    letter-spacing: 0;
+  }
+}
 .victory__content-direction p {
   text-align: center;
 }
@@ -1761,7 +1766,7 @@ footer p:last-child {
 @media screen and (min-width: 320px) {
   .modal-bgd {
     top: 0;
-    left: -15px;
+    left: 0;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1799,7 +1804,7 @@ footer p:last-child {
 }
 @media screen and (min-width: 768px) {
   .modal-form {
-    padding: 32px 54px 60px 54px;
+    padding: 32px 14px 60px 14px;
     /*добавил т.к. растягивало на весь экран*/
   }
 }
@@ -1844,13 +1849,13 @@ footer p:last-child {
 }
 @media screen and (min-width: 768px) {
   .modal-form-container {
-    padding: 32px 82px 60px 82px;
+    padding: 46px 12px 60px 12px;
     width: 550px;
   }
 }
 @media screen and (min-width: 1100px) {
   .modal-form-container {
-    padding: 32px 92px 60px 92px;
+    padding: 46px 32px 60px 32px;
     width: 523px;
   }
 }
