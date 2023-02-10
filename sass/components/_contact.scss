@@ -103,7 +103,7 @@
     margin-bottom: 10px;
 }
 
-.contacts,
+.contacts, .contacts-me,
 .techskills,
 .softskills, .languages {
 
@@ -139,17 +139,65 @@
   font-size: 14px;
   line-height: 1.7;
   color: #ffffff;
-  opacity: 0.5; /* цвет не менял, применил свойство прозрачность в макете так и стоит*/
+  opacity: 0.5; 
 }
 
-.contacts {
+.contacts-me {
     @media screen and (min-width: 320px) {
         margin-bottom: 25px;
     }
 
     @media screen and (min-width: 768px) {
         margin-bottom: 50px;
-    }    
+    } 
+    
+        & h3 {
+            font-family: "Tinos", 'Times New    Roman', Times, serif;
+            text-transform: uppercase;
+            line-height: 1.15;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+    
+            @media screen and (min-width: 320px) {
+                font-weight: 400;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+    
+            @media screen and (min-width: 768px) {
+                margin-bottom: 20px;
+            }
+        }
+    
+        & h2 {
+            font-family: "Montserrat", sans-serif;
+            color: #ffffff;
+            font-weight: 600;
+            margin-bottom: 50px;
+    
+            @media screen and (min-width: 320px) {
+                font-size: 35px;
+                line-height: 1;
+            }
+    
+            @media screen and (min-width: 768px) {
+                font-size: 45px;
+                line-height: 1.2;
+    
+            }
+        }
+    
+        & h4 {
+            font-family: "Tinos",
+                'Times New    Roman',
+                Times,
+                serif;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 0.1;
+    
+        }
 }
 
 .tech-skills-list {
@@ -170,7 +218,14 @@
     line-height: 1.7;
 }
 
-.techskills, .softskills {
+.contacts {
+
+    & p {
+        color: #ffffff;        
+    }    
+}
+
+.techskills, .softskills, .contacts {
     @media screen and (min-width: 320px)  {
         margin-bottom: 22px;
     }
@@ -206,52 +261,7 @@
     }       
 }
 
-.about {
-    & h2 {
-        font-family: "Tinos", 'Times New    Roman', Times, serif;
-        text-transform: uppercase;
-        line-height: 1.15;
-        color: #000000;
-
-        @media screen and (min-width: 320px) {
-            font-family: "Tinos", 'Times New    Roman', Times, serif;
-            font-weight: 400;
-            font-size: 16px;
-            margin-bottom: 10px;                        
-            }
-
-        @media screen and (min-width: 768px) {
-            margin-bottom: 40px;
-            }      
-    }    
-
-    & h3 {
-        font-family: "Montserrat", sans-serif;
-        color: #000000;        
-        font-weight: 600;
-        margin-bottom: 25px;
-        @media screen and (min-width: 320px) {
-            font-size: 35px;
-            line-height: 1;
-            }
-        @media screen and (min-width: 768px) {
-            font-size: 45px;
-            line-height: 1.2;
-
-            }
-    }
-
-    & h4 {
-        font-family: "Tinos",
-            'Times New    Roman',
-            Times,
-            serif;
-            color: #000000;
-            font-weight: 400;
-            font-size: 19px;
-            line-height: 0.1;
-            
-    }
+.about {    
 
     & p {
         font-size: 14px;
@@ -278,6 +288,10 @@
 }
 
 .projects {
+
+    & p {
+        color: #595959;
+    }
     @media screen and (min-width: 320px) {
         
         margin-bottom: 15px;        
@@ -297,8 +311,9 @@
 }
 
 .project-list {
-    padding: 9px;
-    margin-left: 17px;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;    
 }
 
 .project-items,
@@ -353,6 +368,10 @@
     font-size: 16px;
     line-height: 1.25;
     color: #fb6d3a;
+}
+
+.education {
+    margin-top: 20px;
 }
 
 .specialist {

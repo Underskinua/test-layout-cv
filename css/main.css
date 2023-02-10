@@ -1106,28 +1106,28 @@ footer p:last-child {
 }
 
 @media screen and (min-width: 320px) {
-  .contacts,
+  .contacts, .contacts-me,
 .techskills,
 .softskills, .languages {
     margin-left: 17px;
   }
 }
 @media screen and (min-width: 480px) {
-  .contacts,
+  .contacts, .contacts-me,
 .techskills,
 .softskills, .languages {
     margin-left: 27px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts,
+  .contacts, .contacts-me,
 .techskills,
 .softskills, .languages {
     margin-left: 17px;
   }
 }
 @media screen and (min-width: 1100px) {
-  .contacts,
+  .contacts, .contacts-me,
 .techskills,
 .softskills, .languages {
     margin-left: 40px;
@@ -1149,18 +1149,62 @@ footer p:last-child {
   font-size: 14px;
   line-height: 1.7;
   color: #ffffff;
-  opacity: 0.5; /* цвет не менял, применил свойство прозрачность в макете так и стоит*/
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 320px) {
-  .contacts {
+  .contacts-me {
     margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts {
+  .contacts-me {
     margin-bottom: 50px;
   }
+}
+.contacts-me h3 {
+  font-family: "Tinos", "Times New    Roman", Times, serif;
+  text-transform: uppercase;
+  line-height: 1.15;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+@media screen and (min-width: 320px) {
+  .contacts-me h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-me h3 {
+    margin-bottom: 20px;
+  }
+}
+.contacts-me h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 320px) {
+  .contacts-me h2 {
+    font-size: 35px;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-me h2 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+}
+.contacts-me h4 {
+  font-family: "Tinos", "Times New    Roman", Times, serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 0.1;
 }
 
 .tech-skills-list {
@@ -1181,13 +1225,17 @@ footer p:last-child {
   line-height: 1.7;
 }
 
+.contacts p {
+  color: #ffffff;
+}
+
 @media screen and (min-width: 320px) {
-  .techskills, .softskills {
+  .techskills, .softskills, .contacts {
     margin-bottom: 22px;
   }
 }
 @media screen and (min-width: 768px) {
-  .techskills, .softskills {
+  .techskills, .softskills, .contacts {
     margin-bottom: 44px;
   }
 }
@@ -1224,50 +1272,6 @@ footer p:last-child {
   }
 }
 
-.about h2 {
-  font-family: "Tinos", "Times New    Roman", Times, serif;
-  text-transform: uppercase;
-  line-height: 1.15;
-  color: #000000;
-}
-@media screen and (min-width: 320px) {
-  .about h2 {
-    font-family: "Tinos", "Times New    Roman", Times, serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about h2 {
-    margin-bottom: 40px;
-  }
-}
-.about h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-@media screen and (min-width: 320px) {
-  .about h3 {
-    font-size: 35px;
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 768px) {
-  .about h3 {
-    font-size: 45px;
-    line-height: 1.2;
-  }
-}
-.about h4 {
-  font-family: "Tinos", "Times New    Roman", Times, serif;
-  color: #000000;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 0.1;
-}
 .about p {
   font-size: 14px;
   font-style: normal;
@@ -1296,6 +1300,9 @@ footer p:last-child {
   }
 }
 
+.projects p {
+  color: #595959;
+}
 @media screen and (min-width: 320px) {
   .projects {
     margin-bottom: 15px;
@@ -1316,8 +1323,13 @@ footer p:last-child {
 }
 
 .project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 9px;
-  margin-left: 17px;
 }
 
 .project-items,
@@ -1372,6 +1384,10 @@ footer p:last-child {
   font-size: 16px;
   line-height: 1.25;
   color: #fb6d3a;
+}
+
+.education {
+  margin-top: 20px;
 }
 
 .specialist {
