@@ -470,9 +470,9 @@ img {
     display: flex;
     content: "";
     width: 5px;
-    height: 116px;
+    height: 150px;
     left: 0;
-    top: 0;
+    top: 15px;
     position: absolute;
     background: var(--text-color-green);
     border-radius: 2px;
@@ -1193,7 +1193,7 @@ footer p:last-child {
     line-height: 1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
   .contacts-me h2 {
     font-size: 45px;
     line-height: 1.2;
@@ -1358,8 +1358,21 @@ footer p:last-child {
   /*отступ от текста вниз*/
   padding: 0.1em;
 }
-
 .project-link-style-my:hover {
+  position: relative;
+  bottom: 1em;
+  color: #fb6d3a;
+}
+
+.project-link-black {
+  color: #595959;
+  text-decoration: underline;
+  border-bottom: 0.3em;
+  padding-bottom: 0.3em;
+  /*отступ от текста вниз*/
+  padding: 0.1em;
+}
+.project-link-black:hover {
   position: relative;
   bottom: 1em;
   color: #fb6d3a;

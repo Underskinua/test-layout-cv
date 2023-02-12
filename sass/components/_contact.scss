@@ -180,7 +180,7 @@
                 line-height: 1;
             }
     
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 1100px) {
                 font-size: 45px;
                 line-height: 1.2;
     
@@ -341,12 +341,27 @@
     padding-bottom: 0.3em;
     /*отступ от текста вниз*/
     padding: 0.1em;
+
+    &:hover {
+            position: relative;
+            bottom: 1em;
+            color: #fb6d3a;
+        }
 }
 
-.project-link-style-my:hover {
-    position: relative;
-    bottom: 1em;
-    color: #fb6d3a;
+.project-link-black {
+    color: #595959;
+        text-decoration: underline;
+        border-bottom: 0.3em;
+        padding-bottom: 0.3em;
+        /*отступ от текста вниз*/
+        padding: 0.1em;
+    
+        &:hover {
+            position: relative;
+            bottom: 1em;
+            color: #fb6d3a;
+        }
 }
 
 .project-link {
