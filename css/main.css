@@ -2937,4 +2937,94 @@ footer p:last-child {
 }
 .btn-back-project a:hover {
   text-decoration: underline;
+}
+
+.header-frispes {
+  padding: 66px 0 56px 0;
+  background: #fff;
+}
+
+.header-frispes__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-frispes__direction a {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.header-frispes__direction a:nth-child(1) {
+  color: #ff5722;
+  padding: 12px 24px;
+}
+.header-frispes__direction a:nth-child(2) {
+  color: #fff;
+  padding: 12px 24px;
+  background: #ff5722;
+  -webkit-box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);
+          box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);
+}
+
+.header-frispes__direction-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-frispes-logo {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #10375c;
+  margin-right: 154px;
+}
+
+.menu-frispes__items-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #222831;
+  margin-right: 31px;
+}
+
+.hero-frispes {
+  padding: 0 0 57px 0;
+  background: #fff;
+}
+
+.hero-frispes__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hero-frispes__content h1 {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.28;
+  color: #10375c;
+}
+.hero-frispes__content span {
+  color: #ff5722;
+}
+.hero-frispes__content p {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #6A6A6A;
+}
+.hero-frispes__content img {
+  margin-left: 100px;
 }/*# sourceMappingURL=main.css.map */

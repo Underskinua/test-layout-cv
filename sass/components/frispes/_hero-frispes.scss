@@ -1,0 +1,33 @@
+.hero-frispes {
+    padding: 0 0 57px 0;
+    background: #fff;
+}
+
+.hero-frispes__content {
+    display: flex;
+
+    & h1 {
+        font-family: "Lora";
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 1.28;
+        color: $color_primary;
+    }
+
+    & span {
+        color: $color_secondary;
+    }
+
+    & p {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $color_text;
+    }
+
+    & img {        
+        margin-left: 100px; 
+        
+    }
+}
