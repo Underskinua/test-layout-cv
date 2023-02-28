@@ -8,10 +8,11 @@ $color_primary: #10375c;
 $color_secondary: #ff5722;
 $color_black: #222831;
 $color_text: #6A6A6A;
+$color_white: #fff;
 
 .header-frispes {
     padding: 66px 0 56px 0;
-    background: #fff;
+    background: $color_white;
 }
 
 .header-frispes__direction {
@@ -31,7 +32,7 @@ $color_text: #6A6A6A;
         }
     
         & a:nth-child(2) {
-            color: #fff;
+            color: $color_white;
             padding: 12px 24px;
             background: $color_secondary;
             box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);        
