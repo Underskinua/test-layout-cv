@@ -85,6 +85,13 @@ img {
   text-decoration: none;
 }
 
+.footer-frispes__address-description p, .footer-frispes__address-description a, .footer-frispes__space-description p, .footer-frispes__space-description a, .footer-frispes__company-description p, .footer-frispes__company-description a, .footer-frispes__support-description p, .footer-frispes__support-description a, .footer-frispes__description .footer-frispes__description-offer {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
 .header {
   margin: 0 auto;
 }
@@ -3002,6 +3009,26 @@ footer p:last-child {
   padding: 0 0 57px 0;
   background: #fff;
 }
+.hero-frispes .title {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #222831;
+  position: relative;
+}
+.hero-frispes .title::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  width: 73px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 125px;
+  background: #222831;
+}
 
 .hero-frispes__content {
   display: -webkit-box;
@@ -3027,4 +3054,78 @@ footer p:last-child {
 }
 .hero-frispes__content img {
   margin-left: 100px;
+}
+
+.title-white {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  position: relative;
+  color: #f8f8f8;
+}
+.title-white::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  width: 73px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 125px;
+  color: #f8f8f8;
+}
+
+.footer-frispes {
+  padding: 58px 0 102px;
+  background: #0d2c4a;
+}
+
+.footer-frispas__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-frispes-logo {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.28;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-frispes__description {
+  margin-right: 125px;
+}
+.footer-frispes__description .footer-frispes__description-offer {
+  color: #f8f8f8;
+  width: 255px;
+  margin-bottom: 24px;
+}
+
+.footer-frispes__description-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-frispes__space-description p, .footer-frispes__space-description a, .footer-frispes__company-description p, .footer-frispes__company-description a, .footer-frispes__support-description p, .footer-frispes__support-description a {
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-right: 68px;
+}
+
+.footer-frispes__address-description p, .footer-frispes__address-description a {
+  color: #fff;
+}
+.footer-frispes__address-description span {
+  font-family: "Lora";
+  font-weight: 700;
+  line-height: 1.625;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,26 @@
 .hero-frispes {
     padding: 0 0 57px 0;
     background: #fff;
+
+    & .title {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $color_black;
+        position: relative;
+    }
+
+    & .title::after {
+        display: flex;
+        content: '';
+        width: 73px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 125px;
+        background: $color_black;
+    }
 }
 
 .hero-frispes__content {
@@ -28,6 +48,28 @@
 
     & img {        
         margin-left: 100px; 
+        
+    }
+}
+
+.title-white {
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;        
+    position: relative;
+    color: $color_title_white;
+
+    &::after {
+        
+        display: flex;
+        content: '';
+        width: 73px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 125px;
+        color: $color_title_white;
         
     }
 }

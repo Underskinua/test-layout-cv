@@ -1,0 +1,60 @@
+
+.footer-frispes {
+    padding: 58px 0 102px;
+    background: $color_bg_footer;
+}
+
+.footer-frispas__wrapper {
+    display: flex;
+}
+
+.footer-frispes-logo {
+    font-family: "Lora";
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.28;
+    color: $color_white;
+    margin-bottom: 16px;
+}
+
+.footer-frispes__description {
+    margin-right: 125px;
+
+    & .footer-frispes__description-offer {
+        @extend %footer_text;
+        color: $color_title_white;
+        width: 255px;
+        margin-bottom: 24px;
+    }
+}
+
+.footer-frispes__description-social {
+    display: flex;
+    gap: 16px;    
+}
+
+.footer-frispes__space-description, .footer-frispes__company-description, .footer-frispes__support-description {
+    & p, a {
+        @extend %footer_text;
+        color: $color_white;
+        white-space: nowrap;
+        text-decoration: none;        
+        margin-right: 68px;
+    }
+}
+
+.footer-frispes__address-description {
+    & p, a {
+        @extend %footer_text;
+        color: $color_white;
+    }
+
+    & span {
+        font-family: "Lora";
+        font-weight: 700;
+        line-height: 1.625;
+        color: $color_white;   
+    }
+}
+
+
