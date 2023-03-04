@@ -39,22 +39,38 @@
         color: $color_white;
         white-space: nowrap;
         text-decoration: none;        
-        margin-right: 68px;
-    }
+        margin-right: 50px;
+    }   
 }
 
-.footer-frispes__address-description {
-    & p, a {
+.footer-frispes__address-description {    
+
+    & p {
         @extend %footer_text;
         color: $color_white;
-    }
-
-    & span {
-        font-family: "Lora";
-        font-weight: 700;
-        line-height: 1.625;
-        color: $color_white;   
+        
     }
 }
 
+// .footer-frispes__address-content {    
+   
 
+//     & p {
+//         @extend %footer_text;
+//         color: $color_white !important;
+//     }
+
+//     & span {
+//         font-family: "Lora";
+//         font-weight: 700;
+//         line-height: 1.625;
+//         color: $color_white;      
+//     }
+
+//     & a {
+//         @extend %footer_text;
+//         color: $color_white;
+//     }
+// }
+
+    
