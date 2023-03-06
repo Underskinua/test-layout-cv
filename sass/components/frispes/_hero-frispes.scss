@@ -3,10 +3,7 @@
     background: $color_white;
 
     & .title {
-        font-family: "Lato";
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.5;
+        @extend %title;
         color: $color_black;
         position: relative;
     }
@@ -18,32 +15,32 @@
         height: 2px;
         position: absolute;
         top: 50%;
-        left: 125px;
+        left: 7em;
         background: $color_black;
     }
 }
 
 .hero-frispes__content {
     display: flex;
+    gap: 48px;
 
-    & h1 {
+    & .hero-frispes__title-first {
         font-family: "Lora";
         font-weight: 700;
-        font-size: 52px;
+        font-size: 50px;
         line-height: 1.28;
         color: $color_primary;
+        width: 654px;
     }
 
     & span {
         color: $color_secondary;
     }
 
-    & p {
-        font-family: "Lato";
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.5;
+    & .hero-frispes__description {
+        @extend %title;
         color: $color_text;
+        width: 369px;
     }
 
     & img {        
@@ -52,24 +49,3 @@
     }
 }
 
-.title-white {
-    font-family: "Lato";
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5;        
-    position: relative;
-    color: $color_title_white;
-
-    &::after {
-        
-        display: flex;
-        content: '';
-        width: 73px;
-        height: 2px;
-        position: absolute;
-        top: 50%;
-        left: 125px;
-        color: $color_title_white;
-        
-    }
-}

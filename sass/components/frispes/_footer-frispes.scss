@@ -1,7 +1,7 @@
 
 .footer-frispes {
     padding: 58px 0 102px;
-    background: $color_bg_footer;
+    background: $color_bg_footer;  
 }
 
 .footer-frispas__wrapper {
@@ -44,7 +44,6 @@
 }
 
 .footer-frispes__address-description {    
-
     & p {
         @extend %footer_text;
         color: $color_white;
@@ -52,25 +51,4 @@
     }
 }
 
-// .footer-frispes__address-content {    
-   
 
-//     & p {
-//         @extend %footer_text;
-//         color: $color_white !important;
-//     }
-
-//     & span {
-//         font-family: "Lora";
-//         font-weight: 700;
-//         line-height: 1.625;
-//         color: $color_white;      
-//     }
-
-//     & a {
-//         @extend %footer_text;
-//         color: $color_white;
-//     }
-// }
-
-    

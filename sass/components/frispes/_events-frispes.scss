@@ -1,0 +1,129 @@
+.events-frispes {
+    padding: 60px 0 96px;
+    background: $color_title_white;    
+}
+
+.events-frispes__direction-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+
+    & h2 {
+        font-family: "Lora";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.28;
+        color: $color_primary;        
+    }
+
+    & a {
+        @extend %footer_text;
+        color: $color_secondary;
+        display: flex;
+        align-items: center;
+        gap: 8px;    
+        
+        &:hover,
+        &:focus {
+            outline: none;
+            border: 1px solid $color_secondary;
+            padding: 13px 0 13px 114px;
+        }
+    }
+}
+
+.events-frispes__card-news__active {
+    display: flex;   
+    &:hover,
+    &:focus {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    } 
+
+    & .events-frispes__card-news__content {
+        padding: 20px;
+        width: 342px;
+        background: $color_white;
+
+        & .card-news__active__title-third {
+            font-family: "Lora";
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.28;
+            color: $color_black;
+            margin-bottom: 17px;
+        }
+
+        & .card-news__active__description {
+            @extend %text_lato;
+            color: $color_text_9A;
+            margin-bottom: 11px;
+        }
+    }
+}
+
+.events-frispes__card-news__author {
+    display: flex;
+    align-items: center;
+    color: $color_primary;
+
+    &::before {
+        display: flex;
+        content: url(../../../images/desktop/frispes/Ellipse\ 2.svg);
+        width: 56px;
+        height: 56px;
+        margin-right: 23px;
+    }
+
+    & .card-news__active__title-forth {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0;       
+    }
+
+    & .card-news__active__description-author {
+        @extend %text_lato;
+        color: $color_text_9A;
+    }    
+}
+
+
+
+
+.events-frispes__direction-img {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.events-frispes__card-news {
+    width: 342px;   
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    & .card-news__background {
+        background: $color_white;
+        padding: 14px 16px 46px;
+    }
+
+    & .card-news__title-third {
+        font-family: "Lora";
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.28;
+        color: $color_black;
+    }
+
+    & .card-news__description {
+        font-family: "Lato";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        color: $color_text_9A;
+    }
+
+}

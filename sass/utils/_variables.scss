@@ -2,7 +2,9 @@ $color_primary: #10375c;
 $color_secondary: #ff5722;
 $color_black: #222831;
 $color_super_black: #000000;
+$color_text_9A: #9a9a9a;
 $color_text: #6A6A6A;
+$color_text_df: #dfdfdf;
 $color_white: #fff;
 $color_title_white: #f8f8f8;
 $color_bg_footer: #0d2c4a;
@@ -12,4 +14,18 @@ $color_bg_footer: #0d2c4a;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.625;
+}
+
+%text_lato {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+%title {
+    font-family: "Lato";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
 }

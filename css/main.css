@@ -85,11 +85,25 @@ img {
   text-decoration: none;
 }
 
-.footer-frispes__address-description p, .footer-frispes__space-description p, .footer-frispes__space-description a, .footer-frispes__company-description p, .footer-frispes__company-description a, .footer-frispes__support-description p, .footer-frispes__support-description a, .footer-frispes__description .footer-frispes__description-offer {
+.footer-frispes__address-description p, .footer-frispes__space-description p, .footer-frispes__space-description a, .footer-frispes__company-description p, .footer-frispes__company-description a, .footer-frispes__support-description p, .footer-frispes__support-description a, .footer-frispes__description .footer-frispes__description-offer, .events-frispes__direction-header a {
   font-family: "Lora";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.625;
+}
+
+.events-frispes__card-news__author .card-news__active__description-author, .events-frispes__card-news__active .events-frispes__card-news__content .card-news__active__description, .workspace-frispes__benefits p:nth-child(even) {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.title-white, .member-frispes p, .workspace-frispes__content .workspace-frispes__description, .workspace-frispes__content .workspace-frispes__title-white, .hero-frispes__content .hero-frispes__description, .hero-frispes .title {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .header {
@@ -714,16 +728,16 @@ img {
 }
 
 @media screen and (min-width: 320px) {
-  footer {
+  .footer-developer {
     padding: 0 0 72px 0;
   }
 }
 @media screen and (min-width: 1100px) {
-  footer {
+  .footer-developer {
     padding: 0 0 92px 0;
   }
 }
-footer p:last-child {
+.footer-developer p:last-child {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -3008,10 +3022,6 @@ footer p:last-child {
   background: #fff;
 }
 .hero-frispes .title {
-  font-family: "Lato";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
   color: #222831;
   position: relative;
 }
@@ -3024,7 +3034,7 @@ footer p:last-child {
   height: 2px;
   position: absolute;
   top: 50%;
-  left: 125px;
+  left: 7em;
   background: #222831;
 }
 
@@ -3032,35 +3042,282 @@ footer p:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 48px;
 }
-.hero-frispes__content h1 {
+.hero-frispes__content .hero-frispes__title-first {
   font-family: "Lora";
   font-weight: 700;
-  font-size: 52px;
+  font-size: 50px;
   line-height: 1.28;
   color: #10375c;
+  width: 654px;
 }
 .hero-frispes__content span {
   color: #ff5722;
 }
-.hero-frispes__content p {
-  font-family: "Lato";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
+.hero-frispes__content .hero-frispes__description {
   color: #6A6A6A;
+  width: 369px;
 }
 .hero-frispes__content img {
   margin-left: 100px;
 }
 
-.title-white {
+.workspace-frispes {
+  padding: 47px 0 66px;
+  background: #fff;
+}
+
+.workspace-frispes__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 39px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workspace-frispes__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 491px;
+  height: 353px;
+  gap: 48px 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.workspace-frispes__benefits li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc((100% - 80px) / 2);
+      flex-basis: calc((100% - 80px) / 2);
+}
+.workspace-frispes__benefits svg {
+  margin-right: 24px;
+}
+.workspace-frispes__benefits p:nth-child(odd) {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.28;
+  color: #10375c;
+}
+.workspace-frispes__benefits p:nth-child(even) {
+  color: #9a9a9a;
+}
+
+.workspace-frispes__content {
+  padding: 53px;
+  background: #10375c;
+  width: 540px;
+}
+.workspace-frispes__content .workspace-frispes__title-white {
+  color: #fff;
+  position: relative;
+  margin-bottom: 8px;
+}
+.workspace-frispes__content .workspace-frispes__title-white::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  width: 73px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 7em;
+  background-color: #f8f8f8;
+}
+.workspace-frispes__content .workspace-frispes__title-second {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.28;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.workspace-frispes__content .workspace-frispes__description {
+  color: #fff;
+}
+
+.facilities-friespes {
+  padding: 66px 0;
+  background: #fff;
+}
+
+.events-frispes {
+  padding: 60px 0 96px;
+  background: #f8f8f8;
+}
+
+.events-frispes__direction-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 56px;
+}
+.events-frispes__direction-header h2 {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.28;
+  color: #10375c;
+}
+.events-frispes__direction-header a {
+  color: #ff5722;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.events-frispes__direction-header a:hover, .events-frispes__direction-header a:focus {
+  outline: none;
+  border: 1px solid #ff5722;
+  padding: 13px 0 13px 114px;
+}
+
+.events-frispes__card-news__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.events-frispes__card-news__active:hover, .events-frispes__card-news__active:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.events-frispes__card-news__active .events-frispes__card-news__content {
+  padding: 20px;
+  width: 342px;
+  background: #fff;
+}
+.events-frispes__card-news__active .events-frispes__card-news__content .card-news__active__title-third {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.28;
+  color: #222831;
+  margin-bottom: 17px;
+}
+.events-frispes__card-news__active .events-frispes__card-news__content .card-news__active__description {
+  color: #9a9a9a;
+  margin-bottom: 11px;
+}
+
+.events-frispes__card-news__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #10375c;
+}
+.events-frispes__card-news__author::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: url(../../../images/desktop/frispes/Ellipse\ 2.svg);
+  width: 56px;
+  height: 56px;
+  margin-right: 23px;
+}
+.events-frispes__card-news__author .card-news__active__title-forth {
   font-family: "Lato";
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 18px;
+  margin: 0;
+}
+.events-frispes__card-news__author .card-news__active__description-author {
+  color: #9a9a9a;
+}
+
+.events-frispes__direction-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.events-frispes__card-news {
+  width: 342px;
+}
+.events-frispes__card-news:hover, .events-frispes__card-news:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.events-frispes__card-news .card-news__background {
+  background: #fff;
+  padding: 14px 16px 46px;
+}
+.events-frispes__card-news .card-news__title-third {
+  font-family: "Lora";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.28;
+  color: #222831;
+}
+.events-frispes__card-news .card-news__description {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #9a9a9a;
+}
+
+.member-frispes {
+  padding: 23px 0 72px 0;
+  background: #10375c;
+}
+.member-frispes h2 {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.28;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.member-frispes p {
+  color: #dfdfdf;
+  margin-bottom: 33px;
+}
+
+.member-frispes__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 13px 114px;
+  background-color: #ff5722;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.title-white {
   position: relative;
   color: #f8f8f8;
+  margin: 49px 0 8px 0;
 }
 .title-white::after {
   display: -webkit-box;
@@ -3071,8 +3328,31 @@ footer p:last-child {
   height: 2px;
   position: absolute;
   top: 50%;
-  left: 125px;
-  color: #f8f8f8;
+  left: 10em;
+  background-color: #f8f8f8;
+}
+
+.member-frispes__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .member-frispes__direction {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .member-frispes__content {
+    width: 445px;
+  }
+}
+
+.member-frispes__img {
+  background-image: url(/images/desktop/frispes/Pattern.png);
 }
 
 .footer-frispes {

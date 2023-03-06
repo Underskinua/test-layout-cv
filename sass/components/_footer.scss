@@ -1,4 +1,4 @@
-footer {
+.footer-developer {
     @media screen and (min-width: 320px) {
         padding: 0 0 72px 0;
     }
@@ -15,8 +15,7 @@ footer {
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: var(--text-color-white);
-            text-align: center;
-        
+            text-align: center;        
     }    
 }
 

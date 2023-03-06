@@ -1,0 +1,79 @@
+.workspace-frispes {
+    padding: 47px 0 66px;
+    background: $color_white;
+}
+
+.workspace-frispes__direction {
+    display: flex;
+    gap: 39px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workspace-frispes__benefits {
+    display: flex;
+    width: 491px;   
+    height: 353px;
+    gap: 48px 80px;
+    flex-wrap: wrap;
+
+ & li {
+    display: flex;    
+    flex-basis: calc((100% - 80px) / 2);
+ }   
+
+ & svg {
+    margin-right: 24px;
+ }
+
+ & p:nth-child(odd) {
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.28;
+    color: $color_primary;
+ }
+
+ & p:nth-child(even) {
+    @extend %text_lato;
+    color: $color_text_9A;
+ }
+}
+
+.workspace-frispes__content {
+    padding: 53px;
+    background: $color_primary;
+    width: 540px;
+
+    & .workspace-frispes__title-white {
+        @extend %title;
+        color: $color_white;
+        position: relative;
+        margin-bottom: 8px;
+
+        &::after {        
+            display: flex;
+            content: '';
+            width: 73px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 7em;
+            background-color: $color_title_white;        
+        }
+    }
+
+    & .workspace-frispes__title-second {
+        font-family: "Lora";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.28;
+        color: $color_white;
+        margin-bottom: 24px;
+    }
+
+    & .workspace-frispes__description {
+        @extend %title;
+        color: $color_white;
+    }
+}
