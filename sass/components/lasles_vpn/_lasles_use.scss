@@ -26,20 +26,22 @@
     @extend %lasles_text_bold;
     font-size: 16px;
     color: $laslesvpn_gray;
-    // list-style: url("../../../images/desktop/lasles/tick-circle.svg");
     
-    // list-style-position: inside;
     display: flex;
     flex-direction: column;
-    // justify-items: center;
+    gap: 21px;
     
-    & li::before {
-    //     display: flex;
-    //     flex-direction: column;
 
-    content: url(../../../images/desktop/lasles/tick-circle.svg);
-    
+    & li {
+        position: relative;
+        padding-left: 38px;
 
     }
     
+    & li::before {
+        display: flex;   
+        left: 0;    
+        position: absolute;
+        content: url(../../../images/desktop/lasles/tick-circle.svg);
+    }    
 }
