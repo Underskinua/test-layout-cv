@@ -1,0 +1,53 @@
+.header {
+    padding: 30px 0 49px;
+    background: $color_white;
+}
+
+.lasles__nav__direction {
+    display: flex;   
+    align-items: center; 
+}
+
+.lasles__logo {
+    display: flex;
+    align-items: center;
+    & p {
+        margin-right: 77px;
+        @extend %lasles_text_normal;
+        font-size: 18px;
+        color: $laslesvpn_normal1;
+    }
+    & svg {
+        margin-right: 11px;
+    }
+    & span {
+        @extend %lasles_text_bold;
+        font-size: 18px;
+        color: $laslesvpn_normal;
+    }      
+}
+
+.lasles__nav__menu {
+    display: flex;
+    margin-right: 127px;
+    gap: 50px;
+    @extend %lasles_text_normal;
+    font-size: 16px;
+    color: $laslesvpn_gray;
+}
+
+.lasles__nav__button {
+    display: flex;
+    gap: 15px;  
+    & a {
+        font-size: 16px;
+        color: $laslesvpn_gray;
+        text-decoration: none;
+        padding: 9px 22px;
+        &:hover,
+        &:focus {
+            outline: 2px solid $laslesvpn_red;
+            border-radius: 20px;            
+        }
+    }   
+}

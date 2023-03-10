@@ -1,0 +1,46 @@
+.lasles__benefits {
+    padding: 37px 0 60px;
+    background: $color_white;
+}
+
+.lasles__benefits__border {    
+    width: 820px;
+    padding: 34px 49px;
+    margin: 0 auto;
+    box-shadow: 7px 13px 35px rgba(0, 0, 0, 0.09);
+}
+
+.lasles__benefits__direction {
+    display: flex;
+    justify-content: center;
+    & li:nth-child(1) {
+        padding-right: 71px;
+    }
+    & li:nth-child(2) {
+        border-left: 1px solid #aeaeae;
+        border-right: 1px solid #aeaeae;
+        padding-right: 86px;
+        padding-left: 119px;
+    }
+    & li:nth-child(3) {
+        margin-left: 103px;
+    }
+    
+}
+
+.lasles__benefits__items {
+    display: flex;
+    & svg {
+        margin-right: 23px;
+    }
+    & p:first-child {
+        @extend %lasles_text_bold;
+        font-size: 20px;
+        color: $laslesvpn_gray;        
+    }
+    & p:last-child {
+        @extend %lasles_text_normal;
+        font-size: 15px;
+        color: $laslesvpn_very-gray;        
+    }
+}

@@ -1,0 +1,45 @@
+.lasles__use {
+    padding: 0 0 75px;
+    background: $color_white;
+}
+
+.lasles__use__derection {
+    display: flex;  
+    gap: 172px; 
+}
+
+.lasles__use__content {
+    & h2 {
+        @extend %lasles_text_bold;
+        font-size: 30px;
+        color: $laslesvpn_gray;
+        margin-bottom: 16px;
+    }
+    & p {
+        @extend %lasles_text_normal;
+        color: $color_text;
+        margin-bottom: 10px;
+    }
+}
+
+.lasles__use__list {    
+    @extend %lasles_text_bold;
+    font-size: 16px;
+    color: $laslesvpn_gray;
+    // list-style: url("../../../images/desktop/lasles/tick-circle.svg");
+    
+    // list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    // justify-items: center;
+    
+    & li::before {
+    //     display: flex;
+    //     flex-direction: column;
+
+    content: url(../../../images/desktop/lasles/tick-circle.svg);
+    
+
+    }
+    
+}

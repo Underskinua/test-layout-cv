@@ -1,0 +1,33 @@
+.lasles__hero {
+    padding: 49px 0 30px;
+    background: $color_white;
+}
+
+.lasles__hero__direction {
+    display: flex;
+    gap: 11px;    
+}
+
+.lasles__hero__content {    
+    & h1 {
+        @extend %lasles_text_normal;
+        font-size: 50px;    
+        color: $laslesvpn_gray;
+        margin-bottom: 42px;
+        & span {
+            @extend %lasles_text_bold;
+        }
+    }
+    & p {
+        @extend %lasles_text_normal;
+        color: $color_text;
+        margin-bottom: 112px;
+    }
+    & .lasles__hero__button {
+        background: $laslesvpn_red;
+        border-radius: 20px;         
+        @extend %lasles_text_bold;
+        color: $color_white;
+        padding: 17px 40px;          
+    }
+}
