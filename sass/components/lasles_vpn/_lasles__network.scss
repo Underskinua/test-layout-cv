@@ -1,0 +1,29 @@
+.lasles__network {
+    padding: 91px 0 0;
+    background: $color_white;      
+    & h2 {
+        @extend %lasles_text_bold;
+        color: $laslesvpn_gray;
+        margin-bottom: 16px;        
+    }
+    & p {
+        @extend %lasles_text_normal;
+        color: $color_text;
+        margin-bottom: 90px;        
+    }
+}
+
+.lasles__network__content {
+    width: 559px;
+    text-align: center;
+    margin: 0 auto 91px;    
+}
+
+.world {
+    margin: 0 auto 33px;
+}
+
+.partner {
+    margin: 0 auto;
+}
+

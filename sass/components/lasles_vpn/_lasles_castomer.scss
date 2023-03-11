@@ -1,0 +1,19 @@
+.lasles__customer {
+    padding: 8px 0 249px;
+    background: $color_white;
+}
+.lasles__customer__content {
+    width: 559px;
+    & h2 {
+        @extend %lasles_text_bold;
+        color: $laslesvpn_gray;
+        margin-bottom: 16px;
+    }
+    & p {
+        @extend %lasles_text_normal;
+        color: $color_text;
+        margin-bottom: 46px;
+
+    }
+}
+
