@@ -85,13 +85,13 @@ img {
   text-decoration: none;
 }
 
-.lasles__customer__content p, .lasles__network p, .lasles__plan__item__large, .lasles__plan__item__middle, .lasles__plan__item__free, .lasles__plan__column span, .lasles__plan p, .lasles__use__content p, .lasles__benefits__items p:last-child, .lasles__hero__content p, .lasles__hero__content h1, .lasles__nav__menu, .lasles__logo p {
+.lasles__footer__column__three__direction .lasles__footer__column__indent a, .lasles__footer__column__first .lasles__footer__description, .lasles__logo__footer p, .lasles__customer__subscribe__content p, .lasles__customer__feedback-rating p:nth-child(1), .lasles__customer__feedback-border p, .lasles__customer__content p, .lasles__network p, .lasles__plan__item__large, .lasles__plan__item__middle, .lasles__plan__item__free, .lasles__plan__column span, .lasles__plan p, .lasles__use__content p, .lasles__benefits__items p:last-child, .lasles__hero__content p, .lasles__hero__content h1, .lasles__nav__menu, .lasles__logo p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1.185;
 }
 
-.lasles__customer__content h2, .lasles__network h2, .lasles__plan__direction h3, .lasles__plan__column h4, .lasles__plan h2, .lasles__use__list, .lasles__use__content h2, .lasles__benefits__items p:first-child, .lasles__hero__content .lasles__hero__button, .lasles__hero__content h1 span, .lasles__logo span {
+.lasles__footer__column__three__direction .lasles__footer__title, .lasles__logo__footer span, .lasles__customer__subscribe__content h3, .lasles__customer__subscribe__bg button a, .lasles__customer__feedback-direction h3, .lasles__customer__content h2, .lasles__network h2, .lasles__plan__direction h3, .lasles__plan__column h4, .lasles__plan h2, .lasles__use__list, .lasles__use__content h2, .lasles__benefits__items p:first-child, .lasles__hero__content .lasles__hero__button, .lasles__hero__content h1 span, .lasles__logo span {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   line-height: 1.185;
@@ -3503,6 +3503,10 @@ img {
   color: #fff;
   padding: 17px 40px;
 }
+.lasles__hero__content .lasles__hero__button:hover, .lasles__hero__content .lasles__hero__button:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .lasles__benefits {
   padding: 37px 0 60px;
@@ -3650,6 +3654,10 @@ img {
   background: #f53838;
   padding: 11px 56px;
 }
+.lasles__plan__column a:hover, .lasles__plan__column a:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .lasles__plan__direction {
   display: -webkit-box;
@@ -3778,10 +3786,12 @@ img {
 .lasles__customer {
   padding: 8px 0 249px;
   background: #fff;
+  position: relative;
 }
 
 .lasles__customer__content {
   width: 559px;
+  margin: 0 auto;
 }
 .lasles__customer__content h2 {
   color: #2b2b2b;
@@ -3790,4 +3800,246 @@ img {
 .lasles__customer__content p {
   color: #6A6A6A;
   margin-bottom: 46px;
+}
+
+.lasles__customer__feedback-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+  margin-bottom: 27px;
+}
+
+.lasles__customer__feedback-border {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 20px;
+  padding: 20px 40px;
+}
+.lasles__customer__feedback-border:hover, .lasles__customer__feedback-border:focus {
+  border: 1px solid #f53838;
+}
+.lasles__customer__feedback-border p {
+  font-size: 16px;
+  color: #6A6A6A;
+}
+
+.lasles__customer__feedback-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 21px;
+}
+.lasles__customer__feedback-direction img {
+  margin-right: 21px;
+}
+.lasles__customer__feedback-direction h3 {
+  font-size: 18px;
+  color: #101010;
+  margin-bottom: 6px;
+}
+
+.lasles__customer__feedback-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.lasles__customer__feedback-rating p:nth-child(1) {
+  margin-right: 18px;
+  font-size: 15px;
+  color: #7b7b7b;
+}
+.lasles__customer__feedback-rating p:nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #7b7b7b;
+}
+.lasles__customer__feedback-rating svg {
+  margin-left: 10px;
+}
+
+.lasles__customer__slader__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45px;
+  margin-bottom: 88px;
+}
+
+.lasles__customer__slader__scroll-indent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+}
+
+.lasles__customer__slader-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+}
+.lasles__customer__slader-scroll svg:nth-last-child(-n+3) {
+  fill: #d1d1d1;
+}
+
+.lasles__customer__slader-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 45px;
+}
+.lasles__customer__slader-arrow svg:nth-child(1) {
+  fill: #d1d1d1;
+}
+.lasles__customer__slader-arrow svg:nth-child(2) {
+  fill: #f53838;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.lasles__customer__subscribe__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 1070px;
+  bottom: -19px;
+  background: #fff;
+  padding: 43px 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 12px 18px 54px rgba(0, 0, 0, 0.11);
+          box-shadow: 12px 18px 54px rgba(0, 0, 0, 0.11);
+}
+.lasles__customer__subscribe__bg button {
+  width: 244px;
+  height: 57px;
+  border: none;
+  border-radius: 20px;
+  background: #f53838;
+}
+.lasles__customer__subscribe__bg button:hover, .lasles__customer__subscribe__bg button:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.lasles__customer__subscribe__bg button a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.lasles__customer__subscribe__content {
+  width: 265px;
+}
+.lasles__customer__subscribe__content h3 {
+  color: #2b2b2b;
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+.lasles__customer__subscribe__content p {
+  color: #6A6A6A;
+  font-size: 16px;
+}
+
+.lasles__footer {
+  padding: 60px 0;
+  background: #f4f4f4;
+}
+
+.lasles__logo__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+}
+.lasles__logo__footer p {
+  font-size: 18px;
+  color: #101010;
+}
+.lasles__logo__footer svg {
+  margin-right: 11px;
+}
+.lasles__logo__footer span {
+  font-size: 18px;
+  color: #151515;
+}
+
+.lasles__footer__column__first {
+  width: 337px;
+  margin-right: 151px;
+}
+.lasles__footer__column__first .lasles__footer__description {
+  color: #6A6A6A;
+  margin-bottom: 31px;
+}
+
+.lasles__footer__social-direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.lasles__footer__social-direction svg {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+.lasles__footer__social-direction svg:hover, .lasles__footer__social-direction svg:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lasles__footer__column__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lasles__footer__column__three__direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 93px;
+}
+.lasles__footer__column__three__direction .lasles__footer__title {
+  font-size: 16px;
+  color: #151515;
+  margin-bottom: 20px;
+}
+.lasles__footer__column__three__direction .lasles__footer__column__indent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+.lasles__footer__column__three__direction .lasles__footer__column__indent a {
+  color: #646464;
+  font-size: 15px;
+}
+.lasles__footer__column__three__direction .lasles__footer__column__indent a:hover, .lasles__footer__column__three__direction .lasles__footer__column__indent a:focus {
+  color: #f53838;
 }/*# sourceMappingURL=main.css.map */

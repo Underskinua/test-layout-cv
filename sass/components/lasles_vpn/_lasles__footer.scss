@@ -1,0 +1,84 @@
+.lasles__footer {
+    padding: 60px 0;
+    background: #f4f4f4;
+}
+
+.lasles__logo__footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    & p {               
+        @extend %lasles_text_normal;
+        font-size: 18px;
+        color: $laslesvpn_normal1;
+    }
+    & svg {
+        margin-right: 11px;
+    }
+    & span {
+        @extend %lasles_text_bold;
+        font-size: 18px;
+        color: $laslesvpn_normal;
+    }      
+}
+
+.lasles__footer__column__first {
+    width: 337px;
+    margin-right: 151px;
+    & .lasles__footer__description {
+        @extend %lasles_text_normal;
+        color: $color_text;   
+        margin-bottom: 31px;     
+    }
+}
+
+.lasles__footer__social-direction {
+    display: flex;
+    gap:  20px;
+    
+    & svg {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        &:hover,
+            &:focus {
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            }
+    }
+}
+
+.lasles__footer__column__direction {
+    display: flex;
+}
+
+.lasles__footer__column__three__direction {
+    display: flex;
+    gap: 93px;
+
+    & .lasles__footer__title {
+        @extend %lasles_text_bold;
+        font-size: 16px;
+        color: $laslesvpn_normal;
+        margin-bottom: 20px;
+    }
+    & .lasles__footer__column__indent {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        & a {
+            @extend %lasles_text_normal;
+            color: $laslesvpn_very-gray;
+            font-size: 15px;
+            &:hover,
+            &:focus {
+                color: $laslesvpn_red;
+            }
+        }
+    }
+}
+
+
+
+
+
