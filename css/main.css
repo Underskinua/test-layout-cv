@@ -85,13 +85,13 @@ img {
   text-decoration: none;
 }
 
-.lasles__use__content p, .lasles__benefits__items p:last-child, .lasles__hero__content p, .lasles__hero__content h1, .lasles__nav__menu, .lasles__logo p {
+.lasles__plan p, .lasles__use__content p, .lasles__benefits__items p:last-child, .lasles__hero__content p, .lasles__hero__content h1, .lasles__nav__menu, .lasles__logo p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1.185;
 }
 
-.lasles__use__list, .lasles__use__content h2, .lasles__benefits__items p:first-child, .lasles__hero__content .lasles__hero__button, .lasles__hero__content h1 span, .lasles__logo span {
+.lasles__plan h2, .lasles__use__list, .lasles__use__content h2, .lasles__benefits__items p:first-child, .lasles__hero__content .lasles__hero__button, .lasles__hero__content h1 span, .lasles__logo span {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   line-height: 1.185;
@@ -3414,7 +3414,7 @@ img {
   color: #fff;
 }
 
-.header {
+.lasles__header {
   padding: 30px 0 49px;
   background: #fff;
 }
@@ -3568,6 +3568,9 @@ img {
   gap: 172px;
 }
 
+.lasles__use__content {
+  padding-top: 41px;
+}
 .lasles__use__content h2 {
   font-size: 30px;
   color: #2b2b2b;
@@ -3599,6 +3602,24 @@ img {
   display: -ms-flexbox;
   display: flex;
   left: 0;
+  top: -1px;
   position: absolute;
-  content: url(../../../images/desktop/lasles/tick-circle.svg);
+  content: url(../../../images/desktop/lasles/Vector.svg);
+}
+
+.lasles__plan {
+  background: #fff;
+}
+.lasles__plan h2 {
+  font-size: 30px;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.lasles__plan p {
+  font-size: 16px;
+  color: #6A6A6A;
+  text-align: center;
+  width: 559px;
+  margin: 0 auto 21px;
 }/*# sourceMappingURL=main.css.map */

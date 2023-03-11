@@ -9,6 +9,7 @@
 }
 
 .lasles__use__content {
+    padding-top: 41px;
     & h2 {
         @extend %lasles_text_bold;
         font-size: 30px;
@@ -25,23 +26,19 @@
 .lasles__use__list {    
     @extend %lasles_text_bold;
     font-size: 16px;
-    color: $laslesvpn_gray;
-    
+    color: $laslesvpn_gray;    
     display: flex;
     flex-direction: column;
     gap: 21px;
-    
-
     & li {
         position: relative;
         padding-left: 38px;
-
-    }
-    
+    }    
     & li::before {
         display: flex;   
-        left: 0;    
+        left: 0;   
+        top: -1px; 
         position: absolute;
-        content: url(../../../images/desktop/lasles/tick-circle.svg);
+        content: url(../../../images/desktop/lasles/Vector.svg);
     }    
 }

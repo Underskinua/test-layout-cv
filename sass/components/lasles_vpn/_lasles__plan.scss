@@ -1,0 +1,20 @@
+.lasles__plan {
+    background: $color_white;    
+
+    & h2 {
+        
+        @extend %lasles_text_bold;
+        font-size: 30px;
+        color: $laslesvpn_gray;
+        margin-bottom: 16px;
+        text-align: center
+    }
+    & p {
+        @extend %lasles_text_normal;
+        font-size: 16px;
+        color: $color_text;        
+        text-align: center;
+        width: 559px;
+        margin: 0 auto 21px;
+    }
+}
