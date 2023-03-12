@@ -16,16 +16,13 @@
     height: 353px;
     gap: 48px 80px;
     flex-wrap: wrap;
-
  & li {
     display: flex;    
     flex-basis: calc((100% - 80px) / 2);
  }   
-
  & svg {
     margin-right: 24px;
  }
-
  & p:nth-child(odd) {
     font-family: "Lora";
     font-weight: 400;

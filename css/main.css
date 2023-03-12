@@ -478,14 +478,18 @@ img {
   color: var(--text-color-white);
   margin-bottom: 20px;
 }
+
+.about-me__description {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 320px) {
-  .about-me p {
+  .about-me__description {
     font-size: 18px;
     line-height: 1.4;
   }
 }
 @media screen and (min-width: 1100px) {
-  .about-me p {
+  .about-me__description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,7 +501,7 @@ img {
   }
 }
 @media screen and (min-width: 1100px) {
-  .about-me p::before {
+  .about-me__description::before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -510,6 +514,54 @@ img {
     background: var(--text-color-green);
     border-radius: 2px;
   }
+}
+
+.about-me__benefits__direction-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 41px;
+  margin-bottom: 90px;
+}
+
+.about-me__benefits__direction-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 41px;
+}
+
+.about-me__benefits__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: calc((100% - 41px) / 2);
+      flex-basis: calc((100% - 41px) / 2);
+}
+.about-me__benefits__icon svg {
+  margin-right: 24px;
+  fill: var(--text-color-white);
+}
+.about-me__benefits__icon p:nth-child(1) {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.about-me__benefits__content {
+  width: 540px;
+}
+.about-me__benefits__content p:nth-child(1) {
+  font-size: 24px;
+}
+.about-me__benefits__content h2 {
+  font-size: 40px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1080,7 +1132,6 @@ img {
 .sidebar {
   background-color: #1e2939;
   padding-top: 40px;
-  width: 370px;
 }
 @media screen and (min-width: 320px) {
   .sidebar {
@@ -1122,7 +1173,7 @@ img {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 370px) {
+@media screen and (min-width: 1100px) {
   .sidebar img {
     width: 370px;
     height: 370px;
@@ -1132,7 +1183,7 @@ img {
 .sidebar-title {
   color: #fff;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
   margin-bottom: 10px;
@@ -1169,7 +1220,7 @@ img {
 
 .contacts-type {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
   color: #fff;
@@ -1178,7 +1229,7 @@ img {
 
 .contact-link {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: #fff;
@@ -1196,7 +1247,7 @@ img {
   }
 }
 .contacts-me h3 {
-  font-family: "Tinos", "Times New    Roman", Times, serif;
+  font-family: "Tinos", "Times New Roman", Times, serif;
   text-transform: uppercase;
   line-height: 1.15;
   letter-spacing: 0.1em;
@@ -1233,7 +1284,7 @@ img {
   }
 }
 .contacts-me h4 {
-  font-family: "Tinos", "Times New    Roman", Times, serif;
+  font-family: "Tinos", "Times New Roman", Times, serif;
   color: #fff;
   font-weight: 400;
   font-size: 19px;
@@ -1253,7 +1304,7 @@ img {
 .tech-skills-text {
   color: #fff;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -1291,12 +1342,12 @@ img {
 }
 @media screen and (min-width: 320px) {
   .about_user {
-    padding: 40px 7px 40px 7px;
+    padding: 40px 7px;
   }
 }
 @media screen and (min-width: 480px) {
   .about_user {
-    padding: 40px 17px 40px 17px;
+    padding: 40px 17px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1349,7 +1400,7 @@ img {
 
 .title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22px;
   line-height: 1.2;
   color: #000000;
@@ -1368,7 +1419,7 @@ img {
 .project-items,
 .project-braked {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
   color: #000000;
@@ -1377,7 +1428,7 @@ img {
 .project-link,
 .project-link-style {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: #595959;
@@ -1417,7 +1468,7 @@ img {
 
 .work-position {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   color: #000000;
@@ -1426,7 +1477,7 @@ img {
 
 .organization {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   color: #fb6d3a;
@@ -1437,13 +1488,13 @@ img {
 }
 
 .specialist {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--text-color-black);
 }
 
 .period {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   color: #a8a8a8;
@@ -1452,7 +1503,7 @@ img {
 
 .line {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   color: #000000;
@@ -1462,7 +1513,7 @@ img {
   padding: 0;
   margin-left: 17px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
   color: #595959;
@@ -1470,7 +1521,7 @@ img {
 
 .work-list-item {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: #595959;
