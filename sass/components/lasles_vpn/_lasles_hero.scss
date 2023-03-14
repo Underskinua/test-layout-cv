@@ -6,16 +6,42 @@
 .lasles__hero__direction {
     display: flex;
     gap: 11px;    
-}
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+    }
+    & img {
+        margin: 0 auto;
+        @media screen and (min-width: 320px) {
+            width: 290px;
+            height: 191px;
+        }
+        @media screen and (min-width: 480px) {
+            width: 306px;
+            height: 191px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 569px;
+            height: 346px;
+        }
+    }
+}    
 
 .lasles__hero__content {    
+    @media screen and (min-width: 320px) {
+        text-align: center;
+    }
     & h1 {
-        @extend %lasles_text_normal;
-        font-size: 50px;    
+        @extend %lasles_text_normal;         
         color: $laslesvpn_gray;
         margin-bottom: 42px;
         & span {
             @extend %lasles_text_bold;
+        }
+        @media screen and (min-width: 320px) {
+            font-size: 40px;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 50px;
         }
     }
     & p {
@@ -28,10 +54,12 @@
         border-radius: 20px;         
         @extend %lasles_text_bold;
         color: $color_white;
-        padding: 17px 40px;  
+        padding: 17px 40px;         
         &:hover,
             &:focus {
                 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-            }        
+            }  
+           
     }
 }
+

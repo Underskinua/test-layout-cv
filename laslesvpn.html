@@ -54,7 +54,7 @@
                         <svg width="24" height="24"><use href="./images/desktop/sprite.svg#lasles-logo"></use></svg>
                         <p>Lasles<span>VPN</span></p>
                     </div>
-                    <ul class="lasles__nav__menu list ">
+                    <ul class="lasles__nav__menu list">
                         <li>features</li>
                         <li>Pricing</li>
                         <li>Testimonial</li>
@@ -64,8 +64,14 @@
                         <li><a href="#">Sign in</a></li>
                         <li><a href="#">Sign up</a></li>
                     </ul>
+                    <button type="button" class="mobile-menu-btn">
+                                             
+                        <svg class="mobile-menu" width="24" height="24">
+                          <use href="./images/desktop/sprite.svg#icon-burger"></use>
+                        </svg>
+                        
+                    </button>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -79,8 +85,13 @@
                         <p>Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat semper augue.</p>
                         <a href="#" class="lasles__hero__button link">Get started</a>
                     </div>
-                
+                    <picture>
+                        <source srcset="./images/desktop/lasles/hero_desktop.png" 
+                        media="(min-width: 768px)"/>
+                        <source srcset="./images/mobile/lasles/hero_mobile.png" 
+                        media="(min-width: 320px)"/>
                     <img src="./images/desktop/lasles/hero_desktop.png" width="569" height="346" alt="hero-boy in glass whith desktop"/>
+                    </picture>    
                 </div>
 
             </div>
@@ -123,7 +134,11 @@
         <section class="lasles__use">
             <div class="container">
                 <div class="lasles__use__derection">
-                    <img src="./images/desktop/lasles/boy-use.png" width="510px" height="406" alt="boy in glass with notebook"/>
+                    <picture>
+                        <source srcset="./images/desktop/lasles/boy_use_desktop.png" media="min-width: 768px"/>
+                        <source srcset="./images/mobile/lasles/boy_mobile.png" media="min-width: 320px"/>
+                    <img src="./images/desktop/lasles/boy_use_desktop.png" width="510px" height="406" alt="boy in glass with notebook"/>
+                    </picture>
                     <div class="lasles__use__content">
                         <h2>We provide many
                             features you can use
@@ -194,9 +209,18 @@
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur. Quis tortor gravida nibh arcu id purus ullamcorper. Vel vel erat semper augue.</p>
                 </div>
-                <img src="./images/desktop/lasles/map_location.png" width="1060" height="539" alt="world map" class="world"/>                
+                <picture>
+                    <source srcset="./images/desktop/lasles/map_location.png" media="min-width: 768px" />
+                    <source srcset="./images/mobile/lasles/map_location_mobile.png" />
+                <img src="./images/desktop/lasles/map_location.png" width="1060" height="539" alt="world map" class="world"/>  
+                </picture>              
             </div>
-            <img src="./images/desktop/lasles/partnership.png" width="1136" height="210" alt="partnership" class="partner"/>
+            <picture>
+                <source srcset="./images/desktop/lasles/partnership.png" media="min-width: 1100px" />
+                <source srcset="./images/mobile/lasles/partnership_mobile.png" media="min-width: 320px" />
+
+                 <img src="./images/desktop/lasles/partnership.png" width="1136" height="210" alt="partnership" class="partner"/>
+            </picture>
         </section>
         <section class="lasles__customer">
             <div class="container">

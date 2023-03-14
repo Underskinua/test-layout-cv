@@ -1,6 +1,5 @@
 .lasles__plan {
     background: $color_white;    
-
     & h2 {        
         @extend %lasles_text_bold;
         font-size: 30px;
@@ -115,7 +114,7 @@
     margin-bottom: 31px;
     @extend %lasles_text_normal;
     color: $laslesvpn_gray; 
-     & li {
+    & li {
         position: relative;
         padding-left: 38px;
     }    
