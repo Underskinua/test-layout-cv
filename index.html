@@ -51,9 +51,10 @@
       <div class="container">
         <nav class="navigation">
           <ul class="list menu-list">
-            <li><a href="#" class="link menu-list__link-active">Home</a></li>
             <li>
-              <a href="./project.html" class="link">Projects</a>
+              <a href="#" class="link menu-list__link-active">Home</a></li>
+            <li>
+              <a href="#project-section" class="link">Projects</a>
             </li>
           </ul>
           <div class="mobile-menu">
@@ -62,7 +63,7 @@
                 <use href="./images/desktop/sprite.svg#icon-home"></use>
               </svg>
             </a>
-            <a href="./project.html">
+            <a href="#project-section">
               <svg class="mobile-menu__icon-web" width="28" height="28">
                 <use href="./images/desktop/sprite.svg#icon-web"></use>
               </svg>
@@ -94,12 +95,14 @@
               </p>
             </li>
             <li>
-              <img
-                class="hero-svg"
-                src="./images/desktop/hero.svg"
-                width="500"
-                height="500"
-              />
+              
+                <img
+                  class="hero-svg"
+                  src="./images/desktop/hero.svg"
+                  width="500"
+                  height="500"
+                />
+              
             </li>
           </ul>
 
@@ -114,12 +117,14 @@
               >
             </button>
           </div>
-          <svg class="hero-scrolle" width="32" height="32">
-            <use href="./images/desktop/sprite.svg#icon-scroll"></use>
-          </svg>
+          <a href="#about-section">
+            <svg class="hero-scrolle" width="32" height="32">
+              <use href="./images/desktop/sprite.svg#icon-scroll"></use>
+            </svg>
+          </a>
         </div>
       </section>
-      <section class="about-me">
+      <section class="about-me" id="about-section">
         <div class="container">
           <h2>About me</h2>
           <p class="about-me__description">
@@ -176,7 +181,7 @@
 
         </div>
       </section>
-      <section class="project">
+      <section class="project" id="project-section">
         <div class="container">
           <h2>Projects</h2>
 
