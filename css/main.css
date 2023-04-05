@@ -207,7 +207,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .menu-list {
-    gap: 150px;
+    gap: 70px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -254,11 +254,7 @@ img {
   }
 }
 
-.mobile-menu__icon-home {
-  fill: var(--text-color-white);
-}
-
-.mobile-menu__icon-web {
+.mobile-menu__icon-home, .mobile-menu__icon-web, .mobile-menu__icon-student {
   fill: var(--text-color-white);
 }
 
@@ -520,7 +516,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 41px;
+  gap: 31px;
   margin-bottom: 90px;
 }
 

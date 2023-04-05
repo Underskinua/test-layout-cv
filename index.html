@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    html {
+      scroll-behavior:smooth;
+    }
+  </style>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -52,7 +57,11 @@
         <nav class="navigation">
           <ul class="list menu-list">
             <li>
-              <a href="#" class="link menu-list__link-active">Home</a></li>
+              <a href="#" class="link menu-list__link-active">Home</a>
+            </li>
+            <li>
+              <a href="#skills-section" class="link">Skills</a>
+            </li>
             <li>
               <a href="#project-section" class="link">Projects</a>
             </li>
@@ -61,6 +70,11 @@
             <a href="./index.html">
               <svg class="mobile-menu__icon-home" width="28" height="28">
                 <use href="./images/desktop/sprite.svg#icon-home"></use>
+              </svg>
+            </a>
+            <a href="#skills-section">
+              <svg class="mobile-menu__icon-student" width="28" height="28">
+                <use href="./images/desktop/sprite.svg#icon-student"></use>
               </svg>
             </a>
             <a href="#project-section">
@@ -124,247 +138,253 @@
           </a>
         </div>
       </section>
-      <section class="about-me" id="about-section">
-        <div class="container">
-          <h2>About me</h2>
-          <p class="about-me__description">
-            Hello, I am a switcher. I'm studying remotely at Goit IT school
-            (Ukraine), I live in Poland. I want to find environment for my
-            growth. Where, under the supervision of professionals I will be able
-            to use my knowledge as a front-end developer, to strengthen them and
-            acquire additional knowledge. This site is my first self-written
-            code. It is not finished yet and will be supplemented for some time.
-            Please visit more often and you will see how it will change as well
-            as my skills. At this time I have begun to learn java script. This
-            will help change the site for the better and expand my skills.
-          </p>
+      <section class="scroll">
+        <section class="about-me" id="about-section">
+          <div class="container">
+            <h2>About me</h2>
+            <p class="about-me__description">
+              Hello, I am a switcher. I'm studying remotely at Goit IT school
+              (Ukraine), I live in Poland. I want to find environment for my
+              growth. Where, under the supervision of professionals I will be able
+              to use my knowledge as a front-end developer, to strengthen them and
+              acquire additional knowledge. This site is my first self-written
+              code. It is not finished yet and will be supplemented for some time.
+              Please visit more often and you will see how it will change as well
+              as my skills. At this time I have begun to learn java script. This
+              will help change the site for the better and expand my skills.
+            </p>
 
-          <div class="about-me__benefits__direction-wraper">
-            <ul class="about-me__benefits__direction-content list">
-              <li class="about-me__benefits__icon">
-                <svg width="32" height="32">
-                  <use href="./images/desktop/sprite.svg#icon-_coding"></use>
-                </svg>
+            <div class="about-me__benefits__direction-wraper">
+              <ul class="about-me__benefits__direction-content list">
+                <li class="about-me__benefits__icon">
+                  <svg width="32" height="32">
+                    <use href="./images/desktop/sprite.svg#icon-_coding"></use>
+                  </svg>
+                  <div>
+                    <p>300+</p>
+                    <p>hours of coding</p>
+                  </div>
+                </li>
+                <li class="about-me__benefits__icon">
+                  <svg width="32" height="32">
+                    <use href="./images/desktop/sprite.svg#icon-web"></use>
+                  </svg>
+                  <div>
+                    <p>7+</p>
+                    <p>web pages added</p>
+                  </div>
+                </li>
+                <li class="about-me__benefits__icon">
+                  <svg width="32" height="32">
+                    <use href="./images/desktop/sprite.svg#icon-student"></use>
+                  </svg>
+                  <div>
+                    <p>&#x221E;</p>
+                    <p>continuous learning</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="about-me__benefits__content">
+                <p>Why I'am?</p>
+                <h2>Because I like it</h2>
+                <p>I will prove it with my own work. With each new site, my code changes for the better. For example, there are fewer lines. Because I use a preprocessor SASS that allows me to write code for CSS styles using all sorts of things: variables, loops, mixins, functions, and more...</p>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </section>
+      </section>
+      <section class="scroll">
+        <section class="project" id="project-section">
+          <div class="container">
+            <h2>Projects</h2>
+
+            <ul class="list project-direction">
+              <!--card-1-->
+              <li>
                 <div>
-                  <p>300+</p>
-                  <p>hours of coding</p>
+                  <picture>
+                    <source
+                      srcset="./images/desktop/desktop-project.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/mobile-project.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <img width="518" height="388" />
+                  </picture>
+                  <div class="project-content">
+                    <h3>title project</h3>
+                    <ul class="list project-tech">
+                      <li>
+                        <button type="button">Javascript</button>
+                      </li>
+                      <li>
+                        <button type="button">Html</button>
+                      </li>
+                      <li>
+                        <button type="button">CSS</button>
+                      </li>
+                      <li>
+                        <button type="button">Sass</button>
+                      </li>
+                    </ul>
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                  </div>
                 </div>
               </li>
-              <li class="about-me__benefits__icon">
-                <svg width="32" height="32">
-                  <use href="./images/desktop/sprite.svg#icon-web"></use>
-                </svg>
+
+              <!--card-2-->
+              <li>
                 <div>
-                  <p>7+</p>
-                  <p>web pages added</p>
-                </div>
-              </li>
-              <li class="about-me__benefits__icon">
-                <svg width="32" height="32">
-                  <use href="./images/desktop/sprite.svg#icon-student"></use>
-                </svg>
-                <div>
-                  <p>&#x221E;</p>
-                  <p>continuous learning</p>
+                  <picture>
+                    <source
+                      srcset="./images/desktop/desktop-project.jpg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/mobile-project.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <img width="518" height="388" />
+                  </picture>
+                  <div class="project-content">
+                    <h3>title project</h3>
+                    <ul class="list project-tech">
+                      <li>
+                        <button type="button">Javascript</button>
+                      </li>
+                      <li>
+                        <button type="button">Html</button>
+                      </li>
+                      <li>
+                        <button type="button">CSS</button>
+                      </li>
+                      <li>
+                        <button type="button">Sass</button>
+                      </li>
+                    </ul>
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                      do amet sint. Velit officia consequat duis enim velit
+                      mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                  </div>
                 </div>
               </li>
             </ul>
-            <div class="about-me__benefits__content">
-              <p>Why I'am?</p>
-              <h2>Because I like it</h2>
-              <p>I will prove it with my own work. With each new site, my code changes for the better. For example, there are fewer lines. Because I use a preprocessor SASS that allows me to write code for CSS styles using all sorts of things: variables, loops, mixins, functions, and more...</p>
-            </div>
+            <button type="button" class="project-btn">
+              <a href="./project.html" class="link project-direction__link"
+                >SEE ALL PROJECTS</a
+              >
+            </button>
           </div>
-
-
-
-
-        </div>
+        </section>
       </section>
-      <section class="project" id="project-section">
-        <div class="container">
-          <h2>Projects</h2>
+      <section class="scroll">  
+        <section class="skills" id="skills-section">
+          <div class="container">
+            <h2>Skills</h2>
+            <h3>Work with</h3>
+            <ul class="list skills__direction">
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-html5"></use>
+                </svg>
+                <p>htm</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-css3"></use>
+                </svg>
+                <p>css</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-sass"></use>
+                </svg>
+                <p>sass</p>
+              </li>
+              <li>
+                <svg width="128" height="128" fill="#2bc1ef">
+                  <use href="./images/desktop/sprite.svg#icon-bem"></use>
+                </svg>
+                <p>bem methodology</p>
+              </li>
+            </ul>
 
-          <ul class="list project-direction">
-            <!--card-1-->
-            <li>
-              <div>
-                <picture>
-                  <source
-                    srcset="./images/desktop/desktop-project.jpg"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="./images/mobile/mobile-project.jpg"
-                    media="(max-width: 767px)"
-                  />
-                  <img width="518" height="388" />
-                </picture>
-                <div class="project-content">
-                  <h3>title project</h3>
-                  <ul class="list project-tech">
-                    <li>
-                      <button type="button">Javascript</button>
-                    </li>
-                    <li>
-                      <button type="button">Html</button>
-                    </li>
-                    <li>
-                      <button type="button">CSS</button>
-                    </li>
-                    <li>
-                      <button type="button">Sass</button>
-                    </li>
-                  </ul>
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <!--card-2-->
-            <li>
-              <div>
-                <picture>
-                  <source
-                    srcset="./images/desktop/desktop-project.jpg"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcset="./images/mobile/mobile-project.jpg"
-                    media="(max-width: 767px)"
-                  />
-                  <img width="518" height="388" />
-                </picture>
-                <div class="project-content">
-                  <h3>title project</h3>
-                  <ul class="list project-tech">
-                    <li>
-                      <button type="button">Javascript</button>
-                    </li>
-                    <li>
-                      <button type="button">Html</button>
-                    </li>
-                    <li>
-                      <button type="button">CSS</button>
-                    </li>
-                    <li>
-                      <button type="button">Sass</button>
-                    </li>
-                  </ul>
-                  <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <button type="button" class="project-btn">
-            <a href="./project.html" class="link project-direction__link"
-              >SEE ALL PROJECTS</a
-            >
-          </button>
-        </div>
-      </section>
-      <section class="skills">
-        <div class="container">
-          <h2>Skills</h2>
-          <h3>Work with</h3>
-          <ul class="list skills__direction">
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-html5"></use>
-              </svg>
-              <p>htm</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-css3"></use>
-              </svg>
-              <p>css</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-sass"></use>
-              </svg>
-              <p>sass</p>
-            </li>
-            <li>
-              <svg width="128" height="128" fill="#2bc1ef">
-                <use href="./images/desktop/sprite.svg#icon-bem"></use>
-              </svg>
-              <p>bem methodology</p>
-            </li>
-          </ul>
-
-          <h3>Started teaching</h3>
-          <ul class="list skills__direction">
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-javascript"></use>
-              </svg>
-              <p>javascript</p>
-            </li>
-          </ul>
-          <h3>Tools</h3>
-          <ul class="list skills__direction">
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-vsc"></use>
-              </svg>
-              <p>vs code</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-figma"></use>
-              </svg>
-              <p>figma</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-Ps"></use>
-              </svg>
-              <p>Photoshop</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-github"></use>
-              </svg>
-              <p>github</p>
-            </li>
-            <li>
-              <svg class="skills__netlify-logo" width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-netlify"></use>
-              </svg>
-              <p>netlify</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-google-dev"></use>
-              </svg>
-              <p>google developer tools</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use href="./images/desktop/sprite.svg#icon-gtm"></use>
-              </svg>
-              <p>google tag manager</p>
-            </li>
-            <li>
-              <svg width="128" height="128">
-                <use
-                  href="./images/desktop/sprite.svg#icon-google-analytics"
-                ></use>
-              </svg>
-              <p>google analitics</p>
-            </li>
-          </ul>
-        </div>
+            <h3>Started teaching</h3>
+            <ul class="list skills__direction">
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-javascript"></use>
+                </svg>
+                <p>javascript</p>
+              </li>
+            </ul>
+            <h3>Tools</h3>
+            <ul class="list skills__direction">
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-vsc"></use>
+                </svg>
+                <p>vs code</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-figma"></use>
+                </svg>
+                <p>figma</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-Ps"></use>
+                </svg>
+                <p>Photoshop</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-github"></use>
+                </svg>
+                <p>github</p>
+              </li>
+              <li>
+                <svg class="skills__netlify-logo" width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-netlify"></use>
+                </svg>
+                <p>netlify</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-google-dev"></use>
+                </svg>
+                <p>google developer tools</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use href="./images/desktop/sprite.svg#icon-gtm"></use>
+                </svg>
+                <p>google tag manager</p>
+              </li>
+              <li>
+                <svg width="128" height="128">
+                  <use
+                    href="./images/desktop/sprite.svg#icon-google-analytics"
+                  ></use>
+                </svg>
+                <p>google analitics</p>
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="footer-developer">

@@ -1,93 +1,75 @@
 .header {        
         margin: 0 auto;     
 }
-
 .navigation {
     display: flex;    
     position: fixed;
     overflow: hidden;
     background: #041f31;
-    z-index: 30;
-    
-    @media screen and (min-width: 320px) {
-        
+    z-index: 30;    
+    @media screen and (min-width: 320px) {        
         justify-content: space-between;
         padding: 23px 0;
         width: 290px;
-    }
-    
+    }    
     @media screen and (min-width: 480px) { 
         justify-content: space-between;
         padding: 27px 0;  
-        width: 450px;      
-    }
-    
-    @media screen and (min-width: 768px) {
-        
+        width: 450px;     
+    }    
+    @media screen and (min-width: 768px) {        
         padding: 23px 0;            
         justify-content: space-between;
         align-items: center;   
         width: 738px;    
     }
-
     @media screen and (min-width: 1100px) {
-        width: 1070px;       
+        width: 1070px;   
     }
-
     & button {      
         background: var(--text-color-green);
         border: none;
         border-radius: 6px;
         outline: none;
-        padding: 12px 20px;
-                
+        padding: 12px 20px;                
         & a {
             color: var(--text-color-black);
             font-weight: 500;
-            line-height: 1.2;
-                        
+            line-height: 1.2;                        
             &:hover {
                 color: var(--text-color-white);
             }
         }
     }    
 }
-
 .menu-list {
     & a {
             position: relative;
             color: var(--text-color-white);
             padding: 0 23px;
         }
-
     @media screen and (min-width: 320px) {
         display: none;
     }
-
     @media screen and (min-width: 480px) {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     @media screen and (min-width: 768px) {
-        gap: 150px;
-    }
-    
-    & li:nth-child(1) {
-       
+        gap: 70px;
+    }    
+    & li:nth-child(1) {       
         @media screen and (min-width: 1100px) {
             margin-right: 387px;
         }           
     }
-
     & li:nth-child(2) { 
         @media screen and (min-width: 1100px) {
             margin-right: 99px;
         }            
     }        
 }
-
 .menu-list__link-active::after {
     @media screen and (min-width: 480px) {
         display: flex;
@@ -109,17 +91,11 @@
         display: flex;
         align-items: end;
         gap: 30px;
-    }
-    
+    }    
     @media screen and (min-width: 480px) {
         display: none;
     }
 }
-
-.mobile-menu__icon-home {
-    fill: var(--text-color-white);    
-}
-
-.mobile-menu__icon-web {
+.mobile-menu__icon-home, .mobile-menu__icon-web, .mobile-menu__icon-student {
     fill: var(--text-color-white);    
 }
