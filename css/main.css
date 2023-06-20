@@ -1378,9 +1378,6 @@ img {
   }
 }
 
-.projects p {
-  color: #041f31;
-}
 @media screen and (min-width: 320px) {
   .projects {
     margin-bottom: 15px;
