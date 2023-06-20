@@ -371,8 +371,7 @@
     color: #041f31;
 }
 
-@media print {
-    
+@media print {    
     .header, .footer-developer {
         display: none;
     }
@@ -381,7 +380,7 @@
     }
     .main_content {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse;        
     }
     .sidebar {
         width: 330px;
@@ -389,7 +388,12 @@
             width: 270px;
             height: 270px;
         }
+        // padding: 100px;
     }
+    .about_user {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
 
 
 

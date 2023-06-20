@@ -1530,6 +1530,10 @@ img {
     width: 270px;
     height: 270px;
   }
+  .about_user {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .victory__content-direction p, .goose__facts__direction p, .goose__facts p, .goose__greeting__container-content p {
   font-weight: 400;
