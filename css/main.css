@@ -1505,10 +1505,7 @@ img {
 }
 
 @media print {
-  .header, .footer-developer {
-    display: none;
-  }
-  .resume h2 {
+  .header, .footer-developer, .mycv, .project-braked, .project-link {
     display: none;
   }
   .main_content {
@@ -1519,9 +1516,14 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+  }
+  .main_content, .main_content a {
+    color: #041f31;
   }
   .sidebar {
-    width: 330px;
+    width: 33vw;
   }
   .sidebar img {
     width: 270px;
@@ -1529,7 +1531,19 @@ img {
   }
   .about_user {
     padding-left: 20px;
-    padding-right: 20px;
+  }
+  .main_content h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .main_content h3 {
+    font-size: 14px;
+  }
+  .main_content h4 {
+    font-size: 12px;
+  }
+  .main_content p {
+    font-size: 10px;
   }
 }
 .victory__content-direction p, .goose__facts__direction p, .goose__facts p, .goose__greeting__container-content p {
