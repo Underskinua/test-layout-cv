@@ -84,13 +84,17 @@ img {
   text-decoration: none;
 }
 
-.lasles__footer__column__three__direction .lasles__footer__column__indent a, .lasles__footer__column__first .lasles__footer__description, .lasles__logo__footer p, .lasles__customer__subscribe__content p, .lasles__customer__feedback-rating p:nth-child(1), .lasles__customer__feedback-border p, .lasles__customer__content p, .lasles__network p, .lasles__plan__item__large, .lasles__plan__item__middle, .lasles__plan__item__free, .lasles__plan__column span, .lasles__plan p, .lasles__use__content p, .lasles__benefits__items p:last-child, .lasles__hero__content p, .lasles__hero__content h1, .lasles__nav__menu, .lasles__logo p {
+.lasles__footer__column__three__direction .lasles__footer__column__indent a, .lasles__footer__column__first .lasles__footer__description, .lasles__logo__footer p, .lasles__customer__subscribe__content p, .lasles__customer__feedback-rating p:nth-child(1), .lasles__customer__feedback-border p, .lasles__customer__content p, .lasles__network p, .lasles__plan__item__large, .lasles__plan__item__middle, .lasles__plan__item__free, .lasles__plan__column span,
+.lasles__plan__column-2 span,
+.lasles__plan__column-3 span, .lasles__plan p, .lasles__use__content p, .lasles__benefits__items p:last-child, .lasles__hero__content p, .lasles__hero__content h1, .lasles__nav__menu, .lasles__logo p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1.185;
 }
 
-.lasles__footer__column__three__direction .lasles__footer__title, .lasles__logo__footer span, .lasles__customer__subscribe__content h3, .lasles__customer__subscribe__bg button a, .lasles__customer__feedback-direction h3, .lasles__customer__content h2, .lasles__network h2, .lasles__plan__direction h3, .lasles__plan__column h4, .lasles__plan h2, .lasles__use__list, .lasles__use__content h2, .lasles__benefits__items p:first-child, .lasles__hero__content .lasles__hero__button, .lasles__hero__content h1 span, .lasles__logo span {
+.lasles__footer__column__three__direction .lasles__footer__title, .lasles__logo__footer span, .lasles__customer__subscribe__content h3, .lasles__customer__subscribe__bg button a, .lasles__customer__feedback-direction h3, .lasles__customer__content h2, .lasles__network h2, .lasles__plan__direction h3, .lasles__plan__column h4,
+.lasles__plan__column-2 h4,
+.lasles__plan__column-3 h4, .lasles__plan h2, .lasles__use__list, .lasles__use__content h2, .lasles__benefits__items p:first-child, .lasles__hero__content .lasles__hero__button, .lasles__hero__content h1 span, .lasles__logo span {
   font-family: "Rubik", sans-serif;
   font-weight: 600;
   line-height: 1.185;
@@ -3872,23 +3876,35 @@ img {
   margin: 0 auto 41px;
 }
 
-.lasles__plan__column {
+.lasles__plan__column,
+.lasles__plan__column-2,
+.lasles__plan__column-3 {
   outline: 2px solid #6A6A6A;
   border-radius: 20px;
   padding: 21px 57px;
   text-align: center;
 }
-.lasles__plan__column:hover, .lasles__plan__column:focus {
+.lasles__plan__column:hover, .lasles__plan__column:focus,
+.lasles__plan__column-2:hover,
+.lasles__plan__column-2:focus,
+.lasles__plan__column-3:hover,
+.lasles__plan__column-3:focus {
   outline: 2px solid #f53838;
 }
-.lasles__plan__column h4 {
+.lasles__plan__column h4,
+.lasles__plan__column-2 h4,
+.lasles__plan__column-3 h4 {
   color: #2b2b2b;
   margin-bottom: 22px;
 }
-.lasles__plan__column span {
+.lasles__plan__column span,
+.lasles__plan__column-2 span,
+.lasles__plan__column-3 span {
   color: #646464;
 }
-.lasles__plan__column a {
+.lasles__plan__column a,
+.lasles__plan__column-2 a,
+.lasles__plan__column-3 a {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -3898,7 +3914,11 @@ img {
   background: #f53838;
   padding: 11px 56px;
 }
-.lasles__plan__column a:hover, .lasles__plan__column a:focus {
+.lasles__plan__column a:hover, .lasles__plan__column a:focus,
+.lasles__plan__column-2 a:hover,
+.lasles__plan__column-2 a:focus,
+.lasles__plan__column-3 a:hover,
+.lasles__plan__column-3 a:focus {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -4248,6 +4268,14 @@ img {
 .lasles__customer__subscribe__content p {
   color: #6A6A6A;
   font-size: 16px;
+}
+
+.lasles__customer__slader-arrow.active {
+  top: 0;
+}
+
+.lasles__customer__slader__wraper .lasles__customer__slader__dot.active {
+  top: 50px;
 }
 
 .lasles__footer {

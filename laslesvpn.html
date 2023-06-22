@@ -24,6 +24,8 @@
         referrerpolicy="no-referrer"
     />
     <!--normalize-end------------------------------->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
     <link rel="stylesheet" href="./css/main.min.css" />
 
@@ -76,6 +78,15 @@
         </nav>
     </header>
     <main>
+        
+        <div class="btn-back-project">
+            <a href="./project.html">
+              <svg width="32" height="32">
+                <use href="./images/desktop/sprite.svg#icon-scroll"></use>
+              </svg>
+              :to projects
+            </a>
+          </div>
         <section class="lasles__hero">
             <div class="container">
                 <div class="lasles__hero__direction">
@@ -171,7 +182,7 @@
                         <h4>FREE</h4>
                         <a href="#" class="link">Select</a>
                     </li>
-                    <li class="lasles__plan__column">
+                    <li class="lasles__plan__column-2">
                         <img src="./images/desktop/lasles/box-plans.png" width="146" height="167" alt="box plan standard" />
                         <h3>Standard plan</h3>
                         <ul class="lasles__plan__item__middle list">
@@ -184,7 +195,7 @@
                         <h4>$ 9 / <span>mo</span></h4>
                         <a href="#" class="link">Select</a>
                     </li>
-                    <li class="lasles__plan__column">
+                    <li class="lasles__plan__column-3">
                         <img src="./images/desktop/lasles/box-plans.png" width="146" height="167" alt="box plan premium" />
                         <h3>Premium plan</h3>
                         <ul class="lasles__plan__item__large list">
@@ -412,6 +423,10 @@
             </p>
         </div>        
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="./scripts/laslesvpn/lasles.js"></script>
     
 </body>
 </html>
